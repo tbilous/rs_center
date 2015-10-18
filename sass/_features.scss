@@ -11,7 +11,7 @@
 
   //features-1
   .features-1 {
-    background: url("../img/features-block1-bg.jpg") no-repeat right -10%;
+    background: url("../img/features-block1-bg.jpg") no-repeat right -50%;
   }
   .features-list {
     list-style: none;
@@ -24,7 +24,7 @@
       position: relative;
       margin-bottom: 1em;
       &:nth-last-child(1) {
-        margin-bottom: 0;
+        //margin-bottom: 0;
         span {
           display: inline-block;
           padding-top: 3%;

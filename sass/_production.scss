@@ -6,4 +6,110 @@
   .section-header {
     margin-bottom: 2em;
   }
+  .item {
+    background-color: rgba(255, 255, 255, .15);
+    text-align: center;
+    padding: .1px 0 1em;
+    max-width: 255px;
+    margin: 0 auto 5.5em;
+    @media all and (max-width: $screen-tablet) {
+      margin: 0 auto 2.5em;
+    }
+  }
+  .item-header {
+    color: white;
+    font-family: 'LatoWebBold', sans-serif;
+    text-transform: uppercase;
+    white-space: pre-line;
+  }
+  .item-photo {
+    margin: 0 auto;
+    padding-top: 112%;
+    &.dveri-zerkalnie {
+      background: transparent url("../img/goods/dveri-zerkalnie.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-gluhie-dsp {
+      background: transparent url("../img/goods/dveri-gluhie-dsp.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-peskostruy {
+      background: transparent url("../img/goods/dveri-peskostruy.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-fotopechat {
+      background: transparent url("../img/goods/dveri-fotopechat.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-lakobel-oracal {
+      background: transparent url("../img/goods/dveri-lakobel-oracal.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-kombinirovannie {
+      background: transparent url("../img/goods/dveri-kombinirovannie.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+  .item-button {
+    background: url("../img/item-button-bg.png") center -50px no-repeat;
+    width: 100%;
+    color: white;
+    margin-top: 1em;
+    &:hover {
+      background-position: center 0;
+      color: white;
+    }
+  }
+  .production-form {
+    background-color: white;
+    margin-left: 5em;
+    padding: 2em 2em .5em;
+    input[type="text"], input[type="submit"] {
+      height: 3em;
+    }
+    input[type="text"], input[type="submit"], textarea {
+      font-size: 1.1em;;
+      border: 1px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      margin-bottom: 1em;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      border: 1px solid lightgray;
+      &:active,
+      &:focus {
+        border-color: $copper-color;
+      }
+    }
+    input[type="submit"] {
+      background-color: $copper-color;
+      float: right;
+    }
+    textarea {
+      resize: none;
+      padding: 10px 16px;
+    }
+    .header-form {
+      margin: 0 0 1em;
+    }
+  }
+  @media all and (max-width: $screen-md-max) and (min-width: $screen-md-min) {
+    .production-form {
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 1em;
+      input[type="text"], input[type="submit"], textarea {
+        margin-bottom: .45em;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-md-min) {
+    .production-form {
+      padding-top: 1em;
+      margin: 0 auto;
+    }
+  }
 }
