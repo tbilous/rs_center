@@ -64,10 +64,10 @@
     background-color: white;
     margin-left: 5em;
     padding: 2em 2em .5em;
-    input[type="text"], input[type="submit"] {
+    input[type="text"], button[type="submit"] {
       height: 3em;
     }
-    input[type="text"], input[type="submit"], textarea {
+    input[type="text"], button[type="submit"], textarea {
       font-size: 1.1em;;
       border: 1px;
       -webkit-box-shadow: none;
@@ -83,7 +83,7 @@
         border-color: $copper-color;
       }
     }
-    input[type="submit"] {
+    button[type="submit"] {
       background-color: $copper-color;
       float: right;
     }
@@ -100,7 +100,7 @@
       margin: 0 auto;
       width: 80%;
       padding-top: 1em;
-      input[type="text"], input[type="submit"], textarea {
+      input[type="text"], button[type="submit"], textarea {
         margin-bottom: .45em;
       }
     }
@@ -110,6 +110,23 @@
     .production-form {
       padding-top: 1em;
       margin: 0 auto;
+    }
+  }
+  .btn-rounded {
+    margin: 1.5em;
+    &:hover {
+      background-color: $copper-color;
+    }
+    &::after,
+    &::before {
+      background-color: $copper-color;
+      width: 3em;
+    }
+    &::after {
+      left: -1.5em;
+    }
+    &::before {
+      right: -1.5em;
     }
   }
 }
