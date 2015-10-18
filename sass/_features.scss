@@ -1,0 +1,104 @@
+//BLOCK-2 features
+.section-features {
+
+  padding-top: 3.6em;
+  @media all and (max-width: $screen-sm-min) {
+    padding-top: 1.6em;
+  }
+  .section-header {
+    margin-bottom: 2em;
+  }
+
+  //features-1
+  .features-1 {
+    background: url("../img/features-block1-bg.jpg") no-repeat right -10%;
+  }
+  .features-list {
+    list-style: none;
+    font-size: 1.5em;
+    padding-left: 3em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    li {
+      height: 4em;
+      position: relative;
+      margin-bottom: 1em;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+        span {
+          display: inline-block;
+          padding-top: 3%;
+        }
+      }
+      &::before {
+        content: '';
+        width: 3em;
+        height: 3em;
+        left: -4em;
+        position: absolute;
+        @media all and (max-width: $screen-tablet) {
+          width: 2em;
+          height: 2em;
+          left: -2.5em;
+        }
+        @media all and (max-width: $screen-phone) {
+          width: 1.5em;
+          height: 1.5em;
+          left: -2em;
+          top: .5em;
+        }
+      }
+      &:nth-child(1)::before {
+        background: url("../img/icons/features-icon-1.png") no-repeat center;
+        background-size: contain;
+      }
+      &:nth-child(2)::before {
+        background: url("../img/icons/features-icon-2.png") no-repeat center;
+        background-size: contain;
+      }
+      &:nth-child(3)::before {
+        background: url("../img/icons/features-icon-3.png") no-repeat center;
+        background-size: contain;
+      }
+      &:nth-child(4)::before {
+        background: url("../img/icons/features-icon-4.png") no-repeat center;
+        background-size: contain;
+      }
+      &:nth-child(5)::before {
+        background: url("../img/icons/features-icon-5.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+  //end features-1
+
+  //features-2
+  .features-2 {
+    background: $features-2-color url("../img/features-block2-bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 7em;
+    padding-bottom: 2em;
+    .text-wrapper-features-2 {
+      padding: 0 10%;
+      @media all and (max-width: $screen-phone) {
+        padding: 0;
+      }
+    }
+    .sub-header {
+      margin-bottom: 1em;
+    }
+    h4 {
+      color: white;
+      font-family: 'LatoWebBold', sans-serif;
+      padding-top: 2em;
+    }
+    i {
+      color: $font-color2;
+    }
+    .stairway {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: 9em;
+    }
+  }
+}
