@@ -1,0 +1,63 @@
+//BLOCK 6
+.section-gallery {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  .section-header {
+    margin-bottom: 4.3em;
+  }
+  .gallery-wrapper {
+    font-size: 1px;
+    li {
+      display: inline-block;
+      font-size: $font-size-base;
+      position: relative;
+      width: 24.6%;
+      margin: 1px 1px 2px;
+      background-size: cover;
+      a {
+        cursor: url("../img/pointer.png"), pointer;
+      }
+
+      @media all and (max-width: $screen-tablet) {
+        font-size: 12px;
+        width: 32.5%;
+      }
+      @media all and (max-width: $screen-phone) {
+        width: 49%;
+      }
+    }
+  }
+  .gallery-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: $gallery-fade-bg-color;
+    opacity: 0;
+    &:hover,
+    &:focus,
+    &:active {
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      opacity: 1;
+    }
+  }
+  .spacer {
+    padding-top: 63%;
+  }
+  .gallery-icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background: url("../img/icons/gallery-icon.png") center;
+    background-size: cover;
+    margin-top: 15%;
+  }
+  .gallery-text {
+    font-family: 'LatoWebBold', sans-serif;
+    color: white;
+    display: block;
+  }
+}

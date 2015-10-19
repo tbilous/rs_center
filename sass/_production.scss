@@ -1,4 +1,4 @@
-//BLOCK 3
+//BLOCK 4
 .section-production {
   background: $features-2-color;
   padding-top: 5em;
@@ -55,6 +55,7 @@
     width: 100%;
     color: white;
     margin-top: 1em;
+    cursor: url("../img/pointer.png"), pointer;
     &:hover {
       background-position: center 0;
       color: white;
@@ -113,7 +114,7 @@
     }
   }
   .btn-rounded {
-    margin: 1.5em;
+    margin-right: 1.5em;
     &:hover {
       background-color: $copper-color;
     }

@@ -1,4 +1,4 @@
-//BLOCK 4
+//BLOCK 5
 
 .section-warranty {
 
@@ -66,6 +66,18 @@
   .rightest {
     visibility: visible;
   }
-
+  .warranty-action {
+    background: url("../img/warranty-action-bg.jpg") center no-repeat;
+    background-size: cover;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    @media all and (max-width: $screen-tablet) {
+      padding-bottom: 1.5em;
+    }
+    .action-header {
+      max-width: 90%;
+      margin: 0 auto 1em;
+    }
+  }
 }
 

@@ -58,14 +58,17 @@ $gold-color: #fee102;
 $copper-color: #c49e44;
 $khaki-color: #8b8530;
 $features-2-color: #016070;
-$font-color1: #898989;
 //warranty i, p
+$font-color1: #898989;
 $font-color2: #c2c2c2;
 $font-color3: #848e97;
-$font-color4: #464646;
 //warranty section header
-$font-color4: #062033;
+$font-color4: #464646;
 //warranty carousel headers
+$font-color4: #062033;
+//gallery-fade
+$gallery-fade-bg-color: rgba(3, 133, 155, .9);
+
 
 body {
   position: relative;
@@ -183,6 +186,9 @@ a, button, input, textarea {
         &:nth-child(1) {
           width: 90%;
         }
+        &:nth-last-child(1) {
+          width: 60%;
+        }
         width: 90%;
         display: block;
         margin: 0 auto .3em;
@@ -211,4 +217,8 @@ a, button, input, textarea {
     right: 1em;
     left: auto;
   }
+}
+
+.spacer {
+  font-size: 1px;
 }

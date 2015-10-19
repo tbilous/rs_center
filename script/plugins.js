@@ -21,4 +21,27 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+$(document).ready(function () {
+//VIDEO
+    /*
+     function thumbsBg() {
+     $(".gallery-wrapper li").each(function () {
+     var imgID = $(this).data('image');
+     $(this).css('backgroundImage', 'url(img/gallery/' + imgID + ')');
+     });
+     }
+     */
+
+    function thumbsBgA() {
+        $(".gallery-wrapper li a").each(function () {
+            var imgID = this.href;
+            $(this).parent('li').css('backgroundImage', 'url(' + imgID + ')');
+            //$(this).css('backgroundImage', 'url(img/gallery/' + imgID + ')');
+            //console.log(imgID)
+        });
+    }
+
+    window.onload = thumbsBgA;
+
+
+});
