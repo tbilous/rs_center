@@ -37,7 +37,7 @@
                     <li class=""><a class="anchor" href="#features"><span>О нас</span></a></li>
                     <li><a class="anchor" href="#advantage"><span>Преимущества</span></a></li>
                     <li><a class="anchor" href="#production"><span>Продукция</span></a></li>
-                    <li><a class="anchor" href="#feedback"><span>Гарантия</span></a></li>
+                    <li><a class="anchor" href="#warranty"><span>Гарантия</span></a></li>
                     <li><a class="anchor" href="#video"><span>Отзывы</span></a></li>
                     <li><a class="anchor" href="#waranty"><span>Вопросы</span></a></li>
                     <li><a class="anchor" href="#faq"><span>Услуги</span></a></li>
@@ -272,6 +272,116 @@
         </div>
     </div>
 </section>
+<section class="section-warranty" id="warranty">
+    <div class="section-header text-center">
+        <h2 class="bold">Гарантия</h2>
+        <h4 class="section-sub-header"><i>Мы гарантируем качество раздвижных дверей и выполняемых работ. Свои слова мы
+            подкрепляем
+            гарантией сроком на 10 лет.</i></h4>
+    </div>
+
+    <!-- Carousel
+================================================== -->
+    <div id="warrantyCarousel" class="carousel slide warranty-carousel" data-ride="carousel" data-type="multi"
+         data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#warrantyCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#warrantyCarousel" data-slide-to="1"></li>
+            <li data-target="#warrantyCarousel" data-slide-to="2"></li>
+            <li data-target="#warrantyCarousel" data-slide-to="3"></li>
+            <li data-target="#warrantyCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="container">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="carousel-content">
+                            <div class="col-xs-3">
+                                <div class="warranty-icon"></div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4 class="carousel-item-header">Гарантия качества изделий</h4>
+
+                                <p>10 лет гарантии на наши раздвижные двери-купе. Высокая надежность подвижных
+                                    механизмов, длительный срок службы и удобство в эксплуатации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-lg-4  col-md-4 col-sm-6">
+                        <div class="carousel-content">
+                            <div class="col-xs-3">
+                                <div class="warranty-icon"></div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4 class="carousel-item-header">Гарантия точного размера</h4>
+
+                                <p>Мастер производит замер проема высокоточным профессиональным лазерным инструментом
+                                    торговой марки BOSH. Ошибки при замере исключены.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-lg-4  col-md-4 col-sm-6">
+                        <div class="carousel-content">
+                            <div class="col-xs-3">
+                                <div class="warranty-icon"></div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4 class="carousel-item-header">Гарантия качества монтажа</h4>
+
+                                <p>Установка раздвижной системы-купе строго по технологии. Профессиональная установка
+                                    сертифицированными мастерами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-lg-4  col-md-4 col-sm-6">
+                        <div class="carousel-content">
+                            <div class="col-xs-3">
+                                <div class="warranty-icon"></div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4 class="carousel-item-header">Гарантия чистоты</h4>
+
+                                <p>Обязательная уборка места где производился монтаж раздвижных дверей-купе входит в
+                                    обязанности мастера-установщика.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-lg-4  col-md-4 col-sm-6">
+                        <div class="carousel-content">
+                            <div class="col-xs-3">
+                                <div class="warranty-icon"></div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4 class="carousel-item-header">Гарантия соблюдения сроков</h4>
+
+                                <p>Мы гарантируем соблюдение 10-ти дневного срока по изготовлению раздвижных дверей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#warrantyCarousel" role="button" data-slide="prev">
+            <span class="left carousel-arrow" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#warrantyCarousel" role="button" data-slide="next">
+            <span class="right carousel-arrow" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+
+</section>
 <!-- Add your site or application content here -->
 <p>Hello world! This is HTML5 Boilerplate.</p>
 
@@ -279,7 +389,29 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.min.js"></script>
+<script>
+    $('#warrantyCarousel').carousel({
+        interval: 40000
+    });
 
+    $('.carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+
+            next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+        }
+    });
+</script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!--<script>
     (function (b, o, i, l, e, r) {

@@ -20,6 +20,17 @@
   text-rendering: optimizeLegibility;
 }
 
+/* Webfont: Lato-Semibold */
+//noinspection ALL
+@font-face {
+  font-family: 'LatoWebSemibold';
+  src: url('../fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */ url('../fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */ url('../fonts/Lato-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 //noinspection ALL
 /* Webfont: Lato-Regular */
 //noinspection ALL
@@ -48,8 +59,13 @@ $copper-color: #c49e44;
 $khaki-color: #8b8530;
 $features-2-color: #016070;
 $font-color1: #898989;
+//warranty i, p
 $font-color2: #c2c2c2;
 $font-color3: #848e97;
+$font-color4: #464646;
+//warranty section header
+$font-color4: #062033;
+//warranty carousel headers
 
 body {
   position: relative;
@@ -172,5 +188,27 @@ a, button, input, textarea {
         margin: 0 auto .3em;
       }
     }
+  }
+}
+
+//GLOBAL CAROUSEL
+
+.carousel-arrow {
+  width: 1.5em;
+  height: 3em;
+  position: absolute;
+  top: 50%;
+  margin-top: -3.5em;
+  &.left {
+    background: transparent url("../img/carousel-left-arrow.png") no-repeat center;
+    background-size: cover;
+    left: 1em;
+    right: auto;
+  }
+  &.right {
+    background: transparent url("../img/carousel-right-arrow.png") no-repeat center;
+    background-size: cover;
+    right: 1em;
+    left: auto;
   }
 }

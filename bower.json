@@ -1,0 +1,21 @@
+{
+  "name": "RS_CENTER",
+  "description": "Landing markup",
+  "main": "index.js",
+  "authors": [
+    "Taras Bilous"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tbilous/rs_center",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
