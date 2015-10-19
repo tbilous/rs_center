@@ -16,19 +16,6 @@
 
   //CAROUSEL
 
-  .carousel-item-header {
-    color: $font-color4;
-    font-family: 'LatoWebSemibold', sans-serif;
-  }
-  .warranty-icon {
-    padding-top: 100%;
-    background: url("../img/warranty-icon.png") no-repeat center;
-    background-size: 100%;
-  }
-  .carousel-content {
-    height: 200px;
-    padding-top: 1em;
-  }
   .warranty-carousel {
     height: 250px;
     margin-bottom: 60px;
@@ -36,35 +23,20 @@
       overflow: hidden;
       height: 200px;
     }
-  }
-  .carousel-control {
-    background: none;
-  }
-  .carousel-inner .active.left {
-    &.active {
-      .left {
-        left: -33%;
-      }
+    .warranty-icon {
+      padding-top: 100%;
+      background: url("../img/warranty-icon.png") no-repeat center;
+      background-size: 100%;
     }
-  }
-  .carousel-inner {
-    .next {
-      left: 33%;
+    .carousel-item-header {
+      color: $font-color4;
+      font-family: 'LatoWebSemibold', sans-serif;
     }
-  }
-  .carousel-inner {
-    .prev {
-      left: -33%;
+    .carousel-content {
+      height: 200px;
+      padding-top: 1em;
     }
-  }
-  .item:not(.prev) {
-    visibility: visible;
-  }
-  .item.right:not(.prev) {
-    visibility: hidden;
-  }
-  .rightest {
-    visibility: visible;
+
   }
   .warranty-action {
     background: url("../img/warranty-action-bg.jpg") center no-repeat;

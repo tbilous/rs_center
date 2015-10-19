@@ -208,17 +208,103 @@ a, button, input, textarea {
   &.left {
     background: transparent url("../img/carousel-left-arrow.png") no-repeat center;
     background-size: cover;
-    left: 1em;
+    left: 2em;
     right: auto;
+    @media all and (max-width: $screen-phone) {
+      left: 10px;
+    }
   }
   &.right {
     background: transparent url("../img/carousel-right-arrow.png") no-repeat center;
     background-size: cover;
-    right: 1em;
+    right: 2em;
     left: auto;
+    @media all and (max-width: $screen-phone) {
+      right: 10px;
+    }
+  }
+  @media all and (max-width: $screen-phone) {
+    width: 1em;
+    height: 2em;
   }
 }
 
+.feedback-carousel, .warranty-carousel {
+  .carousel-control {
+    background: none;
+  }
+  .carousel-inner .active.left {
+    &.active {
+      .left {
+        left: -33%;
+      }
+    }
+  }
+  .carousel-inner {
+    .next {
+      left: 33%;
+    }
+  }
+  .carousel-inner {
+    .prev {
+      left: -33%;
+    }
+  }
+  .item:not(.prev) {
+    visibility: visible;
+  }
+  .item.right:not(.prev) {
+    visibility: hidden;
+  }
+  .rightest {
+    visibility: visible;
+  }
+  .carousel-control {
+    width: 10%;
+  }
+
+}
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
 .spacer {
   font-size: 1px;
+  &.quad {
+    padding-top: 100%;
+  }
 }
+

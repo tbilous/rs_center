@@ -1,0 +1,60 @@
+//BLOCK-7
+.section-feedback {
+  padding-top: 1.6em;
+  padding-bottom: 2em;
+}
+
+.feedback-carousel {
+  margin-bottom: 60px;
+  margin-top: 5em;
+  .item {
+    height: 220px;
+    overflow: hidden;
+  }
+
+  height: 270px;
+  .feadback-heading {
+    margin-bottom: 1em;
+  }
+  i, small {
+    color: $font-color1;
+  }
+  .feedback-ava-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  .item1 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-1-ava.jpg");
+    }
+  }
+  .item2 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-2-ava.jpg");
+    }
+  }
+  .item3 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-3-ava.jpg");
+    }
+  }
+  .item4 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-4-ava.jpg");
+    }
+  }
+  .item5 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-5-ava.jpg");
+    }
+  }
+  .item6 {
+    .feedback-ava-icon {
+      background-image: url("../img/feedback-6-ava.jpg");
+    }
+  }
+
+}
