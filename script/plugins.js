@@ -1,7 +1,8 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
-    var noop = function () {};
+    var noop = function () {
+    };
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -22,26 +23,33 @@
 }());
 
 $(document).ready(function () {
-//VIDEO
-    /*
-     function thumbsBg() {
-     $(".gallery-wrapper li").each(function () {
-     var imgID = $(this).data('image');
-     $(this).css('backgroundImage', 'url(img/gallery/' + imgID + ')');
-     });
-     }
-     */
 
+//GALLERY THUMBS BG
     function thumbsBgA() {
         $(".gallery-wrapper li a").each(function () {
             var imgID = this.href;
             $(this).parent('li').css('backgroundImage', 'url(' + imgID + ')');
-            //$(this).css('backgroundImage', 'url(img/gallery/' + imgID + ')');
-            //console.log(imgID)
         });
     }
 
     window.onload = thumbsBgA;
+
+//TREE FAQ
+
+    $(function () {
+        $('.tree li:has(ul)').addClass('parent_li well tree-patent-well').find(' > span').attr('title', 'Collapse this branch');
+        $('.tree li.parent_li > span').on('click', function (e) {
+            var children = $(this).parent('li.parent_li').find(' > ul > li');
+            if (children.is(":visible")) {
+                children.hide('fast');
+                $(this).attr('title', 'Expand this branch').find(' > i').addClass("glyphicon-plus").removeClass('glyphicon-minus');
+            } else {
+                children.show('fast');
+                $(this).attr('title', 'Collapse this branch').find(' > i').addClass('glyphicon-minus').removeClass(" glyphicon-plus");
+            }
+            e.stopPropagation();
+        });
+    });
 
 
 });

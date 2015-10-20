@@ -1,0 +1,129 @@
+//BLOCK 7
+
+.section-faq {
+
+}
+
+//TREE
+//colors
+$color_alabaster_approx: #fbfbfb;
+$color_mountain_mist_approx: #999;
+$black_5: rgba(0, 0, 0, 0.05);
+$color_gallery_approx: #eee;
+$color_santas_gray_approx: #94a0b4;
+$black: #000;
+
+$tree-header-color: #03859B;
+$child-bg: #bbbbba;
+$plus-color: #b6b6b6;
+$children-list-color: #626262;
+
+.tree-header-color {
+  color: $tree-header-color;
+}
+
+//@extend-elements
+//original selectors
+//.tree li::before, .tree li::after
+%extend_1_tree {
+  content: '';
+  left: -20px;
+  position: absolute;
+  right: auto;
+}
+
+.tree {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: $color_alabaster_approx;
+  border: 1px solid $color_mountain_mist_approx;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px $black_5;
+  .glyphicon-plus {
+    color: $plus-color;
+  }
+  .glyphicon-minus {
+    color: $tree-header-color;
+  }
+  p {
+    font-family: 'LatoWebSemibold', sans-serif;
+    color: $tree-header-color;
+    padding-left: 2em;
+  }
+  .tree-patent-well {
+    padding: 0;
+  }
+  .tree-child-well {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 0 0 3em;
+    height: 3.3em;
+    line-height: 3.3em;
+    .glyphicon {
+      margin-left: -2em;
+      height: 100%;
+      position: absolute;
+      vertical-align: text-top;
+      padding-top: 1.1em;
+      border-right: 1px solid lightgray;
+      padding-right: 1em;
+    }
+    /*    .p{
+          margin-left: 2em;
+        }*/
+    &:hover {
+      border: none !important;
+      -webkit-box-shadow: 0 0 0 1px $gray-lighter;
+      -moz-box-shadow: 0 0 0 1px $gray-lighter;
+      box-shadow: 0 0 0 1px $gray-lighter;
+    }
+  }
+  .children-list {
+    color: $children-list-color;
+  }
+  .sub-tree {
+    background-color: $child-bg;
+  }
+  .sub-tree-list {
+    li {
+      list-style-type: decimal;
+      display: block !important;
+    }
+  }
+  li {
+    margin: 0;
+    padding: 10px 5px 0;
+    position: relative;
+    span {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      + ul {
+        background: $child-bg;
+      }
+      + ul li {
+        display: none;
+        list-style-type: disc;
+      }
+    }
+    &:last-child::before {
+      height: 30px;
+    }
+    &.parent_li > span {
+      cursor: pointer;
+    }
+  }
+  > ul {
+    > li::before {
+      border: 0;
+    }
+    > li::after {
+      border: 0;
+    }
+  }
+}
