@@ -1,21 +1,16 @@
 //BLOCK 5
 
 .section-warranty {
-
   padding-top: 3.1em;
   .section-header {
     max-width: 790px;
     margin: 0 auto 1em;
   }
-  h2 {
-    color: $font-color4;
-  }
-  .section-sub-header, .carousel-content p {
+  .carousel-content p {
     color: $font-color1;
   }
 
   //CAROUSEL
-
   .warranty-carousel {
     height: 250px;
     margin-bottom: 60px;

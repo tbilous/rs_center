@@ -1,18 +1,30 @@
 //BLOCK 7
 
 .section-faq {
-
+  background: url("../img/faq-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+  .section-header {
+    margin-bottom: 3.5em;
+  }
+  .faq-ribbon {
+    padding: 1.5em 0;
+    background: url("../img/faq-ribbon-bg.jpg") center no-repeat;
+    background-size: cover;
+    margin-top: 3em;
+    .text-block {
+      font-family: 'LatoWebSemibold', sans-serif;
+      font-size: 2em;
+      margin-right: 1em;
+    }
+    .btn {
+      vertical-align: bottom;
+    }
+  }
 }
 
 //TREE
 //colors
-$color_alabaster_approx: #fbfbfb;
-$color_mountain_mist_approx: #999;
-$black_5: rgba(0, 0, 0, 0.05);
-$color_gallery_approx: #eee;
-$color_santas_gray_approx: #94a0b4;
-$black: #000;
-
 $tree-header-color: #03859B;
 $child-bg: #bbbbba;
 $plus-color: #b6b6b6;
@@ -22,24 +34,7 @@ $children-list-color: #626262;
   color: $tree-header-color;
 }
 
-//@extend-elements
-//original selectors
-//.tree li::before, .tree li::after
-%extend_1_tree {
-  content: '';
-  left: -20px;
-  position: absolute;
-  right: auto;
-}
-
 .tree {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: $color_alabaster_approx;
-  border: 1px solid $color_mountain_mist_approx;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px $black_5;
   .glyphicon-plus {
     color: $plus-color;
   }
@@ -53,6 +48,7 @@ $children-list-color: #626262;
   }
   .tree-patent-well {
     padding: 0;
+    margin-top: .8em;
   }
   .tree-child-well {
     border: none;
@@ -72,9 +68,6 @@ $children-list-color: #626262;
       border-right: 1px solid lightgray;
       padding-right: 1em;
     }
-    /*    .p{
-          margin-left: 2em;
-        }*/
     &:hover {
       border: none !important;
       -webkit-box-shadow: 0 0 0 1px $gray-lighter;
@@ -109,6 +102,9 @@ $children-list-color: #626262;
       + ul li {
         display: none;
         list-style-type: disc;
+        &:nth-last-child(1) {
+          padding-bottom: 10px;
+        }
       }
     }
     &:last-child::before {
@@ -116,14 +112,6 @@ $children-list-color: #626262;
     }
     &.parent_li > span {
       cursor: pointer;
-    }
-  }
-  > ul {
-    > li::before {
-      border: 0;
-    }
-    > li::after {
-      border: 0;
     }
   }
 }

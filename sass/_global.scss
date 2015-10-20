@@ -58,11 +58,11 @@ $gold-color: #fee102;
 $copper-color: #c49e44;
 $khaki-color: #8b8530;
 $features-2-color: #016070;
-//warranty i, p
+//warranty i, p, master i
 $font-color1: #898989;
 $font-color2: #c2c2c2;
 $font-color3: #848e97;
-//warranty section header
+//warranty, master section header
 $font-color4: #464646;
 //warranty carousel headers
 $font-color4: #062033;
@@ -118,6 +118,13 @@ i {
   color: #000000;
 }
 
+.sub-header-color {
+  color: $font-color1;
+}
+
+.dark-section-color {
+  color: $font-color4;
+}
 .color-features-list {
   color: $font-color3;
 }
