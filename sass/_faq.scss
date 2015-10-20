@@ -45,12 +45,18 @@ $children-list-color: #626262;
     font-family: 'LatoWebSemibold', sans-serif;
     color: $tree-header-color;
     padding-left: 2em;
+    display: inline-block;
+    max-width: 90%;
   }
   .tree-patent-well {
     padding: 0;
     margin-top: .8em;
   }
   .tree-child-well {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -58,12 +64,23 @@ $children-list-color: #626262;
     margin: 0;
     padding: 0 0 0 3em;
     height: 3.3em;
-    line-height: 3.3em;
+    p {
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      line-height: 1;
+    }
     .glyphicon {
       margin-left: -2em;
+      margin-top: -1px;
       height: 100%;
       position: absolute;
-      vertical-align: text-top;
       padding-top: 1.1em;
       border-right: 1px solid lightgray;
       padding-right: 1em;
