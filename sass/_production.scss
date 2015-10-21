@@ -85,7 +85,6 @@
       }
     }
     button[type="submit"] {
-      background-color: $copper-color;
       float: right;
     }
     textarea {
@@ -115,19 +114,5 @@
   }
   .btn-rounded {
     margin-right: 1.5em;
-    &:hover {
-      background-color: $copper-color;
-    }
-    &::after,
-    &::before {
-      background-color: $copper-color;
-      width: 3em;
-    }
-    &::after {
-      left: -1.5em;
-    }
-    &::before {
-      right: -1.5em;
-    }
   }
 }

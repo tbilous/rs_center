@@ -1,0 +1,95 @@
+//BLOCK 9
+
+.section-services {
+  padding-top: 2.8em;
+  padding-bottom: 2.8em;
+  .btn-rounded {
+    font-size: 1em;
+    height: 3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 3em;
+  }
+  .section-sub-header {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 190%;
+  }
+}
+
+.free-services {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.item-service {
+  max-width: 255px;
+  margin: 1em auto;
+  @media screen and (max-width: $screen-phone) {
+    max-width: 200px;
+  }
+}
+
+.service-header {
+  background-color: $service-header-bg;
+  text-transform: uppercase;
+  padding: .5em .5em;
+  min-height: 5.1em;
+}
+
+.service-body {
+  background-color: $service-body-bg;
+  padding-bottom: 1.8em;
+  ul {
+    padding-left: 2em;
+  }
+}
+
+.service-content {
+  padding: 1em 1em 0 0;
+  min-height: 20em;
+  margin-bottom: 1.5em;
+  @media screen and (max-width: $screen-phone) {
+    min-height: 17em;
+  }
+}
+
+.additional-services {
+  margin-top: 1.5em;
+}
+
+.service-photo {
+  min-height: 20em;
+  margin-bottom: 1.5em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: $screen-phone) {
+    min-height: 17em;
+  }
+  &.service0 {
+    background-image: url("../img/services/service00.jpg");
+  }
+  &.service1 {
+    background-image: url("../img/services/service01.jpg");
+  }
+  &.service2 {
+    background-image: url("../img/services/service02.jpg");
+  }
+  &.service3 {
+    background-image: url("../img/services/service03.jpg");
+  }
+  &.service10 {
+    background-image: url("../img/services/service10.jpg");
+  }
+  &.service11 {
+    background-image: url("../img/services/service11.jpg");
+  }
+  &.service12 {
+    background-image: url("../img/services/service12.jpg");
+  }
+  &.service13 {
+    background-image: url("../img/services/service13.jpg");
+  }
+}

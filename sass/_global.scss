@@ -69,6 +69,8 @@ $font-color4: #062033;
 //gallery-fade
 $gallery-fade-bg-color: rgba(3, 133, 155, .9);
 $link-color: rgb(3, 133, 155);
+$service-header-bg: #097d90;
+$service-body-bg: #ebebeb;
 
 body {
   position: relative;
@@ -133,30 +135,11 @@ i {
   color: $font-color3;
 }
 
+.btn-lg {
+  font-size: 1.3em;
+}
 .btn-rounded {
-  border: none;
-  position: relative;
-  z-index: 1;
-  &:hover {
-    background-color: $brand-primary;
-  }
-  &::after,
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: $brand-primary;
-    width: 20%;
-    top: 0;
-    border-radius: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  &::after {
-    left: -7%;
-  }
-  &::before {
-    right: -7%;
-  }
+  border-radius: 2em;
 }
 
 a, button, input, textarea {
