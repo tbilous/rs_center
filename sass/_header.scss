@@ -1,4 +1,5 @@
 //block1-2
+
 header {
   margin-top: 104px;
   min-height: 566px;
@@ -8,28 +9,6 @@ header {
   .navbar-default {
     background: transparent url("../img/nav-bg.jpg") center repeat;
     border: none;
-  }
-  .navbar-brand {
-    padding-top: 35px;
-    background: url("../img/logo.jpg") no-repeat center left;
-    @media all and (max-width: $screen-tablet) {
-      font-size: 14px;
-    }
-    @media all and (max-width: $screen-phone) {
-      font-size: 12px;
-      background-size: 20%;
-    }
-
-  }
-  .underline {
-    border-bottom: 1px solid white;
-    margin-bottom: 4px;
-  }
-  .little-less {
-    font-size: 95%;
-  }
-  .brand-text {
-    padding-left: 4.5em;
   }
   .navbar-nav {
     @media all and (max-width: $screen-md-max) and (min-width: $screen-phone) {
@@ -51,8 +30,19 @@ header {
   .main-header {
     margin-top: 10%;
     @media all and (max-width: $screen-sm-min) {
-      margin-top: 5;
+      margin-top: 5%;
     }
   }
+}
 
+.navbar-brand {
+  padding-top: 35px;
+  background: url("../img/logo.jpg") no-repeat center left;
+  @media all and (max-width: $screen-tablet) {
+    font-size: 14px;
+  }
+  @media all and (max-width: $screen-phone) {
+    font-size: 12px;
+    background-size: 20%;
+  }
 }

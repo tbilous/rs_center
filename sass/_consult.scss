@@ -1,0 +1,96 @@
+//BLOCK 10
+.section-consult {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.consult-wrapper {
+  position: relative;
+  border-radius: 5px;
+  margin-top: 2em;
+  box-shadow: 0 0 0 1px $gray-lighter;
+}
+
+.contact-form-wrapper, .contact-address {
+  min-height: 31.4em;
+}
+
+.contact-address {
+  width: 60%;
+  float: left;
+  padding-top: 2em;
+  background: url("../img/contact-address-bg.jpg") no-repeat;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  @media all and (max-width: $screen-sm-min) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.contact-line {
+  width: 3em;
+  height: 5px;
+  background-color: $brand-info;
+}
+
+.contact-line, .address-text {
+  margin: 2em auto 0;
+}
+
+.address-text {
+  max-width: 330px;
+  font-size: 1.2em;
+  color: #bcbcbb;
+}
+
+.contact-form-wrapper {
+  position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+  @media all and (max-width: $screen-sm-min) {
+    border-radius: 0 0 5px 5px;
+  }
+  &::after {
+    content: '';
+    width: 98%;
+    bottom: 5px;
+    height: 5px;
+    margin-left: 0;
+    position: absolute;
+    -webkit-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.32);
+    z-index: -1;
+  }
+}
+
+.contact-form-wrapper {
+  width: 40%;
+  float: right;
+}
+
+@media all and (max-width: $screen-sm-min) {
+  .contact-form-wrapper, .contact-address {
+    width: 100%;
+  }
+}
+
+.consult-form {
+  padding-top: 2.7em;
+  input, textarea, button {
+    cursor: url("../img/pointer.png"), pointer;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    &:active,
+    &:focus {
+      border-color: $khaki-color;
+    }
+  }
+
+}

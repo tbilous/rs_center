@@ -62,37 +62,12 @@
     }
   }
   .production-form {
-    background-color: white;
     margin-left: 5em;
-    padding: 2em 2em .5em;
-    input[type="text"], button[type="submit"] {
-      height: 3em;
-    }
-    input[type="text"], button[type="submit"], textarea {
-      font-size: 1.1em;;
-      border: 1px;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-      margin-bottom: 1em;
-    }
     input[type="text"], textarea {
-      width: 100%;
-      border: 1px solid lightgray;
       &:active,
       &:focus {
         border-color: $copper-color;
       }
-    }
-    button[type="submit"] {
-      float: right;
-    }
-    textarea {
-      resize: none;
-      padding: 10px 16px;
-    }
-    .header-form {
-      margin: 0 0 1em;
     }
   }
   @media all and (max-width: $screen-md-max) and (min-width: $screen-md-min) {

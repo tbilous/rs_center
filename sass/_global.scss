@@ -56,7 +56,7 @@
 //GLOBAL COLORS
 $gold-color: #fee102;
 $copper-color: $brand-info;
-$khaki-color: #8b8530;
+$khaki-color: $brand-success;
 $features-2-color: #016070;
 //warranty i, p, master i
 $font-color1: #898989;
@@ -119,6 +119,10 @@ i {
 
 .color-black {
   color: #000000;
+}
+
+.color-khaki {
+  color: $khaki-color;
 }
 
 .sub-header-color {
@@ -301,3 +305,56 @@ a, button, input, textarea {
   }
 }
 
+.form-feedback {
+  background-color: white;
+  padding: 2em 2em .5em;
+  input[type="text"], button[type="submit"] {
+    height: 3em;
+  }
+  input[type="text"], button[type="submit"], textarea {
+    font-size: 1.1em;;
+    border: 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 1em;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    &:active,
+    &:focus {
+      border-color: $copper-color;
+    }
+  }
+  button[type="submit"] {
+    float: right;
+  }
+  textarea {
+    resize: none;
+    padding: 10px 16px;
+  }
+  .header-form {
+    margin: 0 0 1em;
+  }
+}
+
+.brand-box {
+  margin: 0 auto;
+  float: none;
+  display: inline-block;
+
+}
+
+.underline {
+  border-bottom: 1px solid white;
+  margin-bottom: 4px;
+}
+
+.little-less {
+  font-size: 95%;
+}
+
+.brand-text {
+  padding-left: 4.5em;
+}
