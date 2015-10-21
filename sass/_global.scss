@@ -55,7 +55,7 @@
 
 //GLOBAL COLORS
 $gold-color: #fee102;
-$copper-color: #c49e44;
+$copper-color: $brand-info;
 $khaki-color: #8b8530;
 $features-2-color: #016070;
 //warranty i, p, master i
@@ -68,6 +68,7 @@ $font-color4: #464646;
 $font-color4: #062033;
 //gallery-fade
 $gallery-fade-bg-color: rgba(3, 133, 155, .9);
+$link-color: rgb(3, 133, 155);
 
 body {
   position: relative;
@@ -122,6 +123,9 @@ i {
   color: $font-color1;
 }
 
+.color-link {
+  color: $link-color;
+}
 .dark-section-color {
   color: $font-color4;
 }

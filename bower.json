@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "lightbox2": "~2.8.1"
+    "lightbox2": "~2.8.1",
+    "font-awesome": "~4.4.0",
+    "font-awesome-animation": "~0.0.7"
   }
 }
