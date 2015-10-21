@@ -71,6 +71,7 @@ $gallery-fade-bg-color: rgba(3, 133, 155, .9);
 $link-color: rgb(3, 133, 155);
 $service-header-bg: #097d90;
 $service-body-bg: #ebebeb;
+$footer-color: #adb8c2;
 
 body {
   position: relative;
@@ -343,7 +344,6 @@ a, button, input, textarea {
   margin: 0 auto;
   float: none;
   display: inline-block;
-
 }
 
 .underline {

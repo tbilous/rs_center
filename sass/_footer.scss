@@ -1,0 +1,60 @@
+.footer {
+  background: url("../img/footer-bg.jpg");
+  padding: 4em 0 2em;
+  color: $footer-color;
+  .brand-box {
+    margin: 0 auto 1.2em;
+    float: none;
+    padding: 0;
+    background-position: left center;
+    font-size: 1em;
+    background-size: contain;
+    height: auto;
+    .brand-text {
+      margin-bottom: 0;
+      padding-left: 4em;
+      @media screen and (max-width: $screen-phone) {
+        padding-left: 5em;
+      }
+    }
+  }
+  .footer-menu {
+    a {
+      color: $footer-color;
+    }
+  }
+  li {
+    margin-bottom: .3em;
+  }
+}
+
+.footer-sub-header {
+  margin-top: 0;
+  color: white;
+}
+
+.footer-address {
+  margin-top: 2em;
+}
+
+.country-list {
+  li {
+    position: relative;
+    padding-left: 25px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 21px;
+      height: 17px;
+      left: 0;
+      background-image: url("../img/flags.png");
+      background-repeat: no-repeat;
+    }
+    &.rus::before {
+      background-position: 0 -21px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}
