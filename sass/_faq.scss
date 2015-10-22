@@ -35,10 +35,10 @@ $children-list-color: #626262;
 }
 
 .tree {
-  .glyphicon-plus {
+  .glyphicon-plus, .fa-plus {
     color: $plus-color;
   }
-  .glyphicon-minus {
+  .glyphicon-minusá .fa-minus {
     color: $tree-header-color;
   }
   p {
@@ -76,7 +76,7 @@ $children-list-color: #626262;
       align-items: center;
       line-height: 1;
     }
-    .glyphicon {
+    .glyphicon, .fa {
       margin-left: -2em;
       margin-top: -1px;
       height: 100%;
