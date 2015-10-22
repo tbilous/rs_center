@@ -67,12 +67,14 @@
             </div>
             <form id="topAction" class="top-action-form action-form">
                 <ul class="list-unstyled input-list">
-                    <li>
-                        <div class="clock" id="top-clock" style="height: 4em; border: 1px solid red;"></div>
+                    <li class="a-form clock-wrapper">
+                        <div class="clock" id="top-clock"></div>
                     </li>
-                    <li><input type="text" name="phone" class="input-lg" placeholder="Введите телефон"/></li>
-                    <li><input type="text" name="name" class="input-lg" placeholder="Введите имя"/></li>
-                    <li><input type="submit" value="Заказать" class="btn-lg btn-primary bold color-black"/></li>
+                    <li class="a-form"><input type="text" name="phone" class="input-lg" placeholder="Введите телефон"/>
+                    </li>
+                    <li class="a-form"><input type="text" name="name" class="input-lg" placeholder="Введите имя"/></li>
+                    <li class="a-form"><input type="submit" value="Заказать"
+                                              class="btn-lg btn-primary bold color-black"/></li>
                 </ul>
             </form>
         </div>
@@ -390,13 +392,15 @@
                 </div>
                 <form id="warrantyAction" class="top-action-form action-form">
                     <ul class="list-unstyled input-list">
-                        <li>
-                            <div class="clock" id="warranty-action-clock"
-                                 style="height: 4em; border: 1px solid red;"></div>
+                        <li class="a-form clock-wrapper">
+                            <div class="clock" id="middle-clock"></div>
                         </li>
-                        <li><input type="text" name="phone" class="input-lg" placeholder="Введите телефон"/></li>
-                        <li><input type="text" name="name" class="input-lg" placeholder="Введите имя"/></li>
-                        <li><input type="submit" value="Заказать" class="btn-lg btn-primary bold color-black"/></li>
+                        <li class="a-form"><input type="text" name="phone" class="input-lg"
+                                                  placeholder="Введите телефон"/></li>
+                        <li class="a-form"><input type="text" name="name" class="input-lg" placeholder="Введите имя"/>
+                        </li>
+                        <li class="a-form"><input type="submit" value="Заказать"
+                                                  class="btn-lg btn-primary bold color-black"/></li>
                     </ul>
                 </form>
             </div>
@@ -1330,9 +1334,27 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="js/vendor/lightbox-plus-jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/flipclock.min.js"></script>
 <script src="js/scrollMonitor.min.js"></script>
 <script src="js/plugins.min.js"></script>
 
+<script>
+    var tomorrow = moment().endOf('day').valueOf() + 1;
+    var now = moment().valueOf();
+    var interval = (tomorrow - now) / 1000;
+    var clock = $('#top-clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru'
+    });
+    var clock = $('#middle-clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru'
+    });
+
+</script>
 <script>
     /*    $('#warrantyCarousel').carousel({
      interval: 40000
