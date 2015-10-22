@@ -50,6 +50,7 @@ $(document).ready(function () {
             e.stopPropagation();
         });
     });
+//SPY MENU
 // Cache selectors
     var lastId,
         topMenu = $("#top-menu"),
@@ -97,5 +98,36 @@ $(document).ready(function () {
                 .end().filter("[href=#" + id + "]").parent().addClass("active");
         }
     });
+
+//Scroll MONITOR
+    /*    var myElement = (".s-monitor");
+
+     var elementWatcher = scrollMonitor.create( myElement );
+
+     elementWatcher.enterViewport(function() {
+     console.log( 'I have entered the viewport' );
+     });
+     elementWatcher.exitViewport(function() {
+     console.log( 'I have left the viewport' );
+     });*/
+    $('.s-monitor').each(function (i, element) {
+
+        var watcher = scrollMonitor.create(element, {top: -200, bottom: -200});
+        var action = $(this).data('animated');
+        watcher.lock();
+        /*
+         watcher.stateChange(function() {
+         //$(element).toggleClass('fixed', this.isAboveViewport)
+         console.log( 'I have entered the viewport' );
+         });*/
+        watcher.enterViewport(function () {
+            console.log(this + ' ' + action + ' ' + 'I have entered the viewport');
+            $(element).addClass(action)
+        });
+        watcher.exitViewport(function () {
+            console.log(this + ' ' + action + ' ' + 'I have left the viewport');
+            $(element).removeClass(action)
+        });
+    })
 
 });

@@ -15,11 +15,10 @@ module.exports = function (grunt) {
         autoprefixer: { // https://github.com/nDmitry/grunt-autoprefixer
             options: {
                 browsers: ['> 1%', 'bb 10', 'ie 8', 'ie 9'],
-                remove: true
-                /*                map: {
+                remove: true/*,
+                 map: {
                  inline: false
                  }*/
-
             },
             no_dest: {
                 src: 'css/styles.css' // output file

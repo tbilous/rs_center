@@ -348,3 +348,10 @@ a, button, input, textarea {
 .brand-text {
   padding-left: 4.5em;
 }
+
+.animated {
+  opacity: 0;
+  &.visible {
+    opacity: 1;
+  }
+}
