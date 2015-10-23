@@ -54,9 +54,10 @@
             <span><img src="img/map-point.png" alt="Выезд к клиенту"></span> Выезд дизайнера бесплатно по Киеву и
             области
         </h3>
-        <a class="btn btn-lg btn-primary btn-rounded color-black" href="javascript:void(0)">
+        <button class="btn btn-lg btn-primary btn-rounded color-black  start-modal" data-toggle="modal"
+                data-target="#orderModal">
             Рассчитать стоимость
-        </a>
+        </button>
 
 
         <div class="action-block">
@@ -80,7 +81,7 @@
         </div>
     </div>
 </header>
-<section class="section-features animated s-monitor" id="features" data-animated="fadeIn">
+<section class="section-features" id="features">
     <div class="section-header">
         <h2 class="text-center bold">Почему клиенты выбирают нас</h2>
     </div>
@@ -88,23 +89,23 @@
         <div class="container">
             <div class="col-md-5">
                 <ul class="features-list">
-                    <li>
+                    <li class="animated s-monitor visible" data-animated="bounceIn" data-top="-100" data-bottom="-100">
                         <div class="bold">Бесплатный</div>
                         <div class="color-features-list">выезд специалиста на замеры</div>
                     </li>
-                    <li>
+                    <li class="animated s-monitor visible" data-animated="bounceIn" data-top="-80" data-bottom="-100">
                         <div class="bold">Бесплатная</div>
                         <div class="color-features-list">доставка по Киеву</div>
                     </li>
-                    <li>
+                    <li class="animated s-monitor visible" data-animated="bounceIn" data-top="-60" data-bottom="-100">
                         <div class="bold">Бесплатный</div>
                         <div class="color-features-list">подъем на этаж и занос в помещение</div>
                     </li>
-                    <li>
+                    <li class="animated s-monitor visible" data-animated="bounceIn" data-top="-40" data-bottom="-100">
                         <div class="bold">Бесплатная</div>
                         <div class="color-features-list">установка</div>
                     </li>
-                    <li>
+                    <li class="animated s-monitor visible" data-animated="bounceIn" data-top="-20" data-bottom="-100">
                         <span class="color-features-list">Официальная гарантия 10 лет</span>
                     </li>
                 </ul>
@@ -120,39 +121,61 @@
                     </h3>
 
                     <div class="text-wrapper-features-2">
-                        <h4>Неподобающее отношение</h4>
-                        <i>При обращении во множество компаний Вы столкнетесь с равнодушием и
-                            непрофессионализмом сотрудников.</i>
 
-
-                        <h4>Тонкий профиль</h4>
-                        <i>Двери-купе у которых боковой профиль
-                            толщиной до 0,8 мм при высоте выше 2,2 метра начинает скручивать пропеллером.</i>
-
-
-                        <h4>Соблазн сэкономить на фурнитуре</h4>
-                        <i>Для экономии используются ролики на пластиковых втулках.</i>
-
-
-                        <h4>Некачественные материалы</h4>
-                        <i>Для экономии устанавливают китайское зеркало. Оно среднего качества и дает искажение.</i>
-
-
-                        <h4>Не дальновидное отношение</h4>
-                        <i>Боковая противоударная щетка начинает отклеиваться уже через пол года.</i>
-
-
-                        <h4>На скорую руку</h4>
-                        <i>Двери, через некоторое время, начинают выскакивать из направляющих.</i>
-
-
-                        <h4>Неуверены в своей услуге</h4>
-                        <i>Гарантия максимум 1 год.</i>
-
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Неподобающее отношение</h4>
+                            <i>При обращении во множество компаний Вы столкнетесь с равнодушием и
+                                непрофессионализмом сотрудников.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Тонкий профиль</h4>
+                            <i>Двери-купе у которых боковой профиль
+                                толщиной до 0,8 мм при высоте выше 2,2 метра начинает скручивать пропеллером.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Соблазн сэкономить на фурнитуре</h4>
+                            <i>Для экономии используются ролики на пластиковых втулках.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Некачественные материалы</h4>
+                            <i>Для экономии устанавливают китайское зеркало. Оно среднего качества и дает искажение.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Не дальновидное отношение</h4>
+                            <i>Боковая противоударная щетка начинает отклеиваться уже через пол года.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>На скорую руку</h4>
+                            <i>Двери, через некоторое время, начинают выскакивать из направляющих.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInLeftBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Неуверены в своей услуге</h4>
+                            <i>Гарантия максимум 1 год.</i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-2 hidden-xs">
-                    <img class="stairway visible-lg" src="img/stairway.png" alt="stairway">
+                <div class="col-sm-2 hidden-sm">
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
+                    <div class="stairway-line visible-lg animated s-monitor" data-animated="fadeInDownBig"
+                         data-top="-20" data-bottom="-100"></div>
                 </div>
                 <div class="col-xs-6 col-sm-5">
                     <h3 class="sub-header color-cooper bold text-center">
@@ -160,29 +183,45 @@
                     </h3>
 
                     <div class="text-wrapper-features-2">
-                        <h4>Квалифицированные сотрудники</h4>
-                        <i>Вы получаете идеально собранные двери-купе с чётко отрегулированной фурнитурой.</i>
-
-                        <h4>Надежный профиль</h4>
-                        <i>У нас прочный жесткий боковой профиль с толщиной стенки 1,1 мм. Мы можем изготавливать двери
-                            высотой до 3 м.</i>
-
-                        <h4>Качественная фурнитура по умолчанию</h4>
-                        <i>У нас качественные ролики на пылезащищенных подшипниках, а не на пластиковых втулках.</i>
-
-                        <h4>Качество на первом месте</h4>
-                        <i>У нас бельгийское зеркало, а не китайское.</i>
-
-                        <h4>Надежное решение</h4>
-                        <i>У нас боковая противоударная щетка вставляется в специальный паз, а не приклеивается.
-                            Безупречно
-                            служит в течении всего срока эксплуатации дверей.</i>
-
-                        <h4>Изначально делаем все правильно</h4>
-                        <i>Мы устанавливаем двери строго по уровню с соблюдением всех норм и технологий.</i>
-
-                        <h4>Мы знаем свое дело</h4>
-                        <i>Гарантия 10 лет!</i>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Квалифицированные сотрудники</h4>
+                            <i>Вы получаете идеально собранные двери-купе с чётко отрегулированной фурнитурой.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Надежный профиль</h4>
+                            <i>У нас прочный жесткий боковой профиль с толщиной стенки 1,1 мм. Мы можем изготавливать
+                                двери
+                                высотой до 3 м.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Качественная фурнитура по умолчанию</h4>
+                            <i>У нас качественные ролики на пылезащищенных подшипниках, а не на пластиковых втулках.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Качество на первом месте</h4>
+                            <i>У нас бельгийское зеркало, а не китайское.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Надежное решение</h4>
+                            <i>У нас боковая противоударная щетка вставляется в специальный паз, а не приклеивается.
+                                Безупречно
+                                служит в течении всего срока эксплуатации дверей.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Изначально делаем все правильно</h4>
+                            <i>Мы устанавливаем двери строго по уровню с соблюдением всех норм и технологий.</i>
+                        </div>
+                        <div class="features-block animated s-monitor" data-animated="fadeInRightBig" data-top="-100"
+                             data-bottom="-100">
+                            <h4>Мы знаем свое дело</h4>
+                            <i>Гарантия 10 лет!</i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,10 +315,11 @@
         </div>
     </div>
 </section>
-<section class="section-warranty s-monitor" id="warranty">
+<section class="section-warranty" id="warranty">
     <div class="section-header text-center">
         <h2 class="bold dark-section-color">Гарантия</h2>
-        <h4 class="section-sub-header sub-header-color"><i>Мы гарантируем качество раздвижных дверей и выполняемых
+        <h4 class="section-sub-header sub-header-color  visible animated s-monitor" data-animated="flash"
+            data-top="-300" data-bottom="-300"><i>Мы гарантируем качество раздвижных дверей и выполняемых
             работ. Свои слова мы
             подкрепляем
             гарантией сроком на 10 лет.</i></h4>
@@ -388,7 +428,8 @@
         <div class="container">
             <div class="action-block">
                 <div class="action-header color-black">
-                    <h2 class="bold text-center">Закажи сейчас и получи скидку 500 грн.</h2>
+                    <h2 class="bold text-center visible animated s-monitor" data-animated="rubberBand" data-top="-300"
+                        data-bottom="-300">Закажи сейчас и получи скидку 500 грн.</h2>
                 </div>
                 <form id="warrantyAction" class="top-action-form action-form">
                     <ul class="list-unstyled input-list">
@@ -947,18 +988,24 @@
     </div>
     <div class="faq-ribbon">
         <div class="ribbon-wrapper text-center">
-            <span class="text-block color-black">Остались вопросы? Задайте их нашему менеджеру!</span>
-            <a href="javascript:void(0)"
-               class="btn btn-lg btn-primary color-black bold">Связь с менеджером</a>
+            <span class="text-block color-black  animated s-monitor visible" data-animated="shake" data-top="-370"
+                  data-bottom="-300">Остались вопросы? Задайте их нашему менеджеру!</span>
+            <button
+                    class="btn btn-lg btn-primary color-black bold  animated s-monitor visible  start-modal"
+                    data-toggle="modal"
+                    data-target="#orderModal" data-animated="shake"
+                    data-top="-300" data-bottom="-300">Связь с менеджером
+            </button>
         </div>
 
     </div>
 </section>
 <section class="section-staff">
     <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center animated s-monitor visible" data-animated="pulse" data-top="-300"
+             data-bottom="-300">
             <h2 class="bold color-white dark-section-color">Выезд мастера на замер бесплатно</h2>
-            <h4 class="section-sub-header sub-header-color">
+            <h4 class="section-sub-header sub-header-color ">
                 <i>Замерщик привозит с собой образцы профилей, дсп и стекол, вы сможете более точно подобрать цвет
                     изделия. Кроме этого, замерщик также продемонстрирует каталог рисунков для фотопечати и
                     пескоструйных изображений.</i>
@@ -998,7 +1045,9 @@
         </div>
         <div class="text-center">
             <i class="fa fa-passing  fa-2x fa-angle-double-right"></i>
-            <a class="btn btn-lg btn-info color-white btn-staff">Вызвать мастера на замер</a>
+            <button class="btn btn-lg btn-info color-white btn-staff start-modal" data-toggle="modal"
+                    data-target="#orderModal">Вызвать мастера на замер
+            </button>
             <i class="fa fa-passing left fa-2x fa-angle-double-left"></i>
         </div>
 
@@ -1009,7 +1058,7 @@
         <div class="section-header text-center">
             <h2 class="bold color-white dark-section-color">Дополнительные услуги</h2>
         </div>
-        <div class="free-services">
+        <div class="free-services animated s-monitor" data-animated="fadeIn" data-top="-80" data-bottom="-100">
             <div class="row">
                 <div class="col-xs-12 col-md-3">
                     <div class="item-service text-center">
@@ -1101,14 +1150,14 @@
             </div>
         </div>
 
-        <div class="text-center">
+        <div class="text-center animated s-monitor visible" data-animated="flash" data-top="-350" data-bottom="-300">
             <h3 class="dark-section-color text-center section-sub-header">Наполнение внутреннего пространства
                 встроенного
                 шкафа-купе или гардеробной</h3>
         </div>
 
         <div class="additional-services">
-            <div class="row">
+            <div class="row  animated s-monitor" data-animated="fadeIn" data-top="-70" data-bottom="-120">
                 <div class="col-xs-6 col-md-3">
                     <div class="item-service text-center">
                         <div class="service-header">
@@ -1166,7 +1215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row  animated s-monitor" data-animated="fadeIn" data-top="-70" data-bottom="-120">
                 <div class="col-xs-6 col-md-3">
                     <div class="item-service text-center">
                         <div class="service-header">
@@ -1329,6 +1378,37 @@
         </div>
     </div>
 </footer>
+<!--MODAL-->
+<div class="modal fade feedback-modal" id="orderModal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <h2 class="modal-header orange">перезвоним за <br/> две минуты</h2>
+
+                <p class="text-center">Заполните форму и мы свяжемся с вами</p>
+
+                <form id="requestForm" class="text-center">
+                    <input name="formtitle" type="hidden" value="Order"/>
+
+                    <div class="input-group">
+                        <input name="name" class="name_input" type="text" required="required"
+                               placeholder="Введите имя"/>
+                    </div>
+                    <div class="input-group">
+                        <input name="phone" class="name_input" type="text" required="required"
+                               placeholder="Введите телефон"/>
+                    </div>
+
+                    <input type="submit" class="btn btn-lg btn-info"/>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
@@ -1340,19 +1420,7 @@
 <script src="js/plugins.min.js"></script>
 
 <script>
-    var tomorrow = moment().endOf('day').valueOf() + 1;
-    var now = moment().valueOf();
-    var interval = (tomorrow - now) / 1000;
-    var clock = $('#top-clock').FlipClock(interval, {
-        clockFace: 'HourlyCounter',
-        countdown: true,
-        language: 'ru'
-    });
-    var clock = $('#middle-clock').FlipClock(interval, {
-        clockFace: 'HourlyCounter',
-        countdown: true,
-        language: 'ru'
-    });
+
 
 </script>
 <script>

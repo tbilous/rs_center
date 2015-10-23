@@ -100,34 +100,47 @@ $(document).ready(function () {
     });
 
 //Scroll MONITOR
-    /*    var myElement = (".s-monitor");
-
-     var elementWatcher = scrollMonitor.create( myElement );
-
-     elementWatcher.enterViewport(function() {
-     console.log( 'I have entered the viewport' );
-     });
-     elementWatcher.exitViewport(function() {
-     console.log( 'I have left the viewport' );
-     });*/
     $('.s-monitor').each(function (i, element) {
 
-        var watcher = scrollMonitor.create(element, {top: -200, bottom: -200});
+        var offsetTop = $(this).data('top');
+        var offsetBottom = $(this).data('bottom');
+        var watcher = scrollMonitor.create(element, {top: offsetTop, bottom: offsetBottom});
         var action = $(this).data('animated');
-        watcher.lock();
-        /*
-         watcher.stateChange(function() {
-         //$(element).toggleClass('fixed', this.isAboveViewport)
-         console.log( 'I have entered the viewport' );
-         });*/
+        //watcher.lock();
+
         watcher.enterViewport(function () {
-            console.log(this + ' ' + action + ' ' + 'I have entered the viewport');
+            //console.log(this + ' ' + action + ' ' + 'I have entered the viewport');
             $(element).addClass(action)
         });
         watcher.exitViewport(function () {
-            console.log(this + ' ' + action + ' ' + 'I have left the viewport');
+            //console.log(this + ' ' + action + ' ' + 'I have left the viewport');
             $(element).removeClass(action)
         });
-    })
+    });
+
+//COUNTER
+    var tomorrow = moment().endOf('day').valueOf() + 1;
+    var now = moment().valueOf();
+    var interval = (tomorrow - now) / 1000;
+    var clock = $('#top-clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru'
+    });
+    var clock = $('#middle-clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru'
+    });
+
+//CENTERED MODAL
+    $(".start-modal").click(function () {
+        var d_tar = $(this).attr('data-target');
+        $(d_tar).show();
+        var modal_he = $(d_tar).find('.modal-dialog .modal-content').height();
+        var win_height = $(window).height();
+        var marr = win_height - modal_he;
+        $('.modal-dialog').css('margin-top', marr / 2);
+    });
 
 });
