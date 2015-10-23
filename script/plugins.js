@@ -143,4 +143,26 @@ $(document).ready(function () {
         $('.modal-dialog').css('margin-top', marr / 2);
     });
 
+    //MAIL FORM
+    $("form").submit(function () {
+        var formID = $(this).attr("id");
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert('отработала' + ' - ' + formID);
+            $('#' + formID).trigger("reset");
+        });
+        if ($('#orderModal').hasClass('in')) {
+            $('#orderModal').modal('hide');
+            return false;
+        } else {
+            return false;
+        }
+    });
+
+
+
 });
