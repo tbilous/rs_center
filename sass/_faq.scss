@@ -41,7 +41,7 @@ $children-list-color: #626262;
   .glyphicon-minusá .fa-minus {
     color: $tree-header-color;
   }
-  p {
+  .query {
     font-family: 'LatoWebSemibold', sans-serif;
     color: $tree-header-color;
     padding-left: 2em;
@@ -64,7 +64,7 @@ $children-list-color: #626262;
     margin: 0;
     padding: 0 0 0 3em;
     height: 3.3em;
-    p {
+    .query {
       margin-bottom: 0;
       display: -webkit-box;
       display: -webkit-flex;
