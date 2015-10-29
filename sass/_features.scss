@@ -11,7 +11,41 @@
 
   //features-1
   .features-1 {
-    background: url("../img/features-block1-bg.jpg") no-repeat right -50%;
+    /*    @media all and (max-width: $screen-sm-max) {
+          background: url("../img/features-block1-bg.jpg") no-repeat right;
+          background-size: 50%;
+        }*/
+    @media all and (max-width: $screen-md-max) {
+      font-size: 12px;
+    }
+    @media all and (max-width: $screen-md-min) {
+      background: url("../img/features-block1-bg.jpg") no-repeat right;
+      background-size: cover;
+    }
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .features-1-img-block {
+      background: url("../img/features-block1-bg.jpg") no-repeat center;
+      padding-top: 80%;
+      background-size: contain;
+      display: inline-block;
+      vertical-align: bottom;
+      width: 60%;
+      position: absolute;
+      right: -15px;
+      bottom: -50%;
+      @media all and (max-width: $screen-lg-min) {
+        bottom: -40%;
+      }
+      @media all and (max-width: $screen-md-min) {
+        display: none;
+      }
+    }
+    //background: url("../img/features-block1-bg.jpg") no-repeat right -50%;
+
   }
   .features-list {
     list-style: none;
@@ -24,7 +58,6 @@
       position: relative;
       margin-bottom: 1em;
       &:nth-last-child(1) {
-        //margin-bottom: 0;
         span {
           display: inline-block;
           padding-top: 3%;
@@ -76,7 +109,7 @@
   .features-2 {
     background: $features-2-color url("../img/features-block2-bg.jpg") no-repeat center;
     background-size: cover;
-    padding-top: 7em;
+    padding-top: 5em;
     padding-bottom: 2em;
     .text-wrapper-features-2 {
       padding: 0 10%;
@@ -86,6 +119,7 @@
     }
     .sub-header {
       margin-bottom: 1em;
+      min-height: 60px;
     }
     h4 {
       color: white;
