@@ -95,6 +95,37 @@
       //padding-top: 60%;
       background: gray;
     }
+    .carousel-indicators{
+      text-align: left;
+      li{
+        border-color: transparent;
+        background: $pr-carousel-indicator-bg;
+        &.active{
+          border-color: transparent;
+          background: $pr-carousel-indicator-active-bg;
+        }
+      }
+    }
+    .fa{
+      position: absolute;
+      top: 50%;
+      margin-top: -1em;
+    }
+    .carousel-control{
+      &.left, &.right{
+        background: none;
+      }
+      &.left{
+        .fa{
+          left: .5em;
+        }
+      }
+      .right{
+        .fa{
+          right: .5em;
+        }
+      }
+    }
   }
 
   @media all and (min-width: $screen-sm-min) {

@@ -167,7 +167,7 @@ $(document).ready(function () {
     function master() {
         var masterHeight = $('.master').outerHeight();
         $(window).on('resize', function () {
-            var masterHeight = $('.master').height();
+            var masterHeight = $('.master').outerHeight();
             $('.slave').css('height', masterHeight + 'px');
         });
         $('.slave').css('height', masterHeight + 'px');
