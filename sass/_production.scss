@@ -17,10 +17,11 @@
     }
   }
   .item-header {
-    color: white;
     font-family: 'LatoWebBold', sans-serif;
     text-transform: uppercase;
     white-space: pre-line;
+    margin: 0;
+    color: white;
   }
   .item-photo {
     margin: 0 auto;
@@ -51,15 +52,12 @@
     }
   }
   .item-button {
-    background: url("../img/item-button-bg.png") center -50px no-repeat;
-    width: 100%;
-    color: white;
-    margin-top: 1em;
-    cursor: url("../img/pointer.png"), pointer;
-    &:hover {
-      background-position: center 0;
-      color: white;
-    }
+    background: white;
+    width: 10em;
+    position: absolute;
+    left: 50%;
+    margin-left: -5em;
+    bottom: 7%;
   }
   .production-form {
     input[type="text"], textarea {
@@ -86,42 +84,84 @@
       margin: 0 auto;
     }
   }
-  .btn-rounded {
-    margin-right: 1.5em;
-  }
   //carousel
   .features-carousel {
     .carousel-content {
-      //padding-top: 60%;
-      background: gray;
+      text-align: center;
+      position: relative;
+      padding-top: 4%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.item1 {
+        background-image: url("../img/newprod/slide1-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide1-lowres.jpg");
+        }
+      }
+      &.item2 {
+        background-image: url("../img/newprod/slide2-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide2-lowres.jpg");
+        }
+      }
+      &.item3 {
+        background-image: url("../img/newprod/slide3-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide3-lowres.jpg");
+        }
+      }
+      &.item4 {
+        background-image: url("../img/newprod/slide4-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide4-lowres.jpg");
+        }
+      }
+      &.item5 {
+        background-image: url("../img/newprod/slide5-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide5-lowres.jpg");
+        }
+      }
+      &.item6 {
+        background-image: url("../img/newprod/slide6-hires.jpg");
+        @media all and (max-width: $screen-sm-min) {
+          background-image: url("../img/newprod/slide6-lowres.jpg");
+        }
+      }
+
     }
-    .carousel-indicators{
+    .carousel-indicators {
       text-align: left;
-      li{
+      margin-left: 0;
+      left: 3%;
+      bottom: -2%;
+      li {
         border-color: transparent;
         background: $pr-carousel-indicator-bg;
-        &.active{
-          border-color: transparent;
+        width: 7px;
+        height: 7px;
+        &.active {
           background: $pr-carousel-indicator-active-bg;
+          margin: 1px;
         }
       }
     }
-    .fa{
+    .fa {
       position: absolute;
       top: 50%;
       margin-top: -1em;
     }
-    .carousel-control{
-      &.left, &.right{
+    .carousel-control {
+      &.left, &.right {
         background: none;
       }
-      &.left{
-        .fa{
+      &.left {
+        .fa {
           left: .5em;
         }
       }
-      .right{
-        .fa{
+      .right {
+        .fa {
           right: .5em;
         }
       }
@@ -132,7 +172,7 @@
     .production-form {
       margin-left: -15px;
     }
-    .features-carousel{
+    .features-carousel {
       margin-right: -15px;
     }
   }
