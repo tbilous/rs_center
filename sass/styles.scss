@@ -1,12 +1,13 @@
 @import "compass";
 @import "bootstrap";
+//global-parameters
+@import "global";
 //MODULES
 @import "lightbox";
 @import "flip";
 @import "modal";
 @import "fontawesome/font-awesome";
 //PAGES
-@import "global";
 @import "header";
 @import "features";
 @import "production";

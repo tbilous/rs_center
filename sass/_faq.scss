@@ -53,26 +53,15 @@ $children-list-color: #626262;
     margin-top: .8em;
   }
   .tree-child-well {
-    /*    display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;*/
     display: flex;
     border: none;
-    /*    -webkit-box-shadow: none;
-        -moz-box-shadow: none;*/
     box-shadow: none;
     margin: 0;
     padding: 0 0 0 3em;
     height: 3.3em;
     .query {
       margin-bottom: 0;
-      /*      display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;*/
       display: flex;
-      /*      -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;*/
       align-items: center;
       line-height: 1;
     }

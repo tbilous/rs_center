@@ -1129,30 +1129,36 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-5 col-sm-offset-1">
                     <div class="staff-card text-center">
-                        <div class="staff-photo m1">
-                            <div class="spacer quad"></div>
-                        </div>
-                        <div class="staff-legend">
-                            <span class="bold text-uppercase color-black"><strong>МАКСИМ</strong></span>
+                        <div class="staff-wrapper">
+                            <div class="staff-photo m1">
+                                <div class="spacer quad"></div>
+                            </div>
+                            <div class="staff-legend">
+                                <span class="bold text-uppercase staff-name"><strong>МАКСИМ</strong></span>
 
-                            <p>Специалист по замерам и монтажу раздвижных дверей, имеет опыт работы более 7 лет</p>
+                                <p>Специалист по замерам и монтажу раздвижных дверей, имеет опыт работы более 7 лет</p>
 
+                            </div>
                         </div>
-                        <a class="color-link" href="javascript:void(0)">Подробнее</a>
+                        <a class="color-link staff-btn" data-toggle="modal"
+                           href="#masterModal">Подробнее</a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-5">
                     <div class="staff-card text-center">
-                        <div class="staff-photo m2">
-                            <div class="spacer quad"></div>
-                        </div>
-                        <div class="staff-legend">
-                            <span class="bold text-uppercase color-black">Александр</span>
+                        <div class="staff-wrapper">
+                            <div class="staff-photo m2">
+                                <div class="spacer quad"></div>
+                            </div>
+                            <div class="staff-legend">
+                                <span class="bold text-uppercase staff-name">Александр</span>
 
-                            <p>Специалист по замерам и обслуживанию раздвижных систем, опыт работы более 5 лет</p>
+                                <p>Специалист по замерам и обслуживанию раздвижных систем, опыт работы более 5 лет</p>
 
+                            </div>
                         </div>
-                        <a class="color-link" href="javascript:void(0)">Подробнее</a>
+                        <a class="color-link staff-btn" data-toggle="modal"
+                           href="#masterModal">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -1189,7 +1195,7 @@
                                     <li>Предоставление заказчику образцов профилей и вариантов наполнения.</li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)"
+                            <a href="img/add-services-modal.jpg" data-lightbox="services"
                                class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
                         </div>
                     </div>
@@ -1210,7 +1216,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)"
+                            <a href="img/add-services-modal.jpg" data-lightbox="services1"
                                class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
                         </div>
                     </div>
@@ -1229,7 +1235,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)"
+                            <a href="img/add-services-modal.jpg" data-lightbox="services2"
                                class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
                         </div>
                     </div>
@@ -1253,7 +1259,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)"
+                            <a href="img/add-services-modal.jpg" data-lightbox="services3"
                                class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
                         </div>
                     </div>
@@ -1547,6 +1553,66 @@
         </div>
     </div>
 </div>
+<!--master modal-->
+<div class="modal fade master-modal" id="masterModal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <button class="modal-close fa fa-times-circle" data-dismiss="modal"></button>
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="col-sm-5">
+                            <div class="staff-modal-block text-center">
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="staff-modal-legend">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p class="legend-header">ПРИЕЗЖАЕТ ТОЧНО В СРОК</p>
+                                        Мастер приезжает к Вам домой в оговоренное время.
+                                    </li>
+                                    <li>
+                                        <p class="legend-header">ПРИВОЗИТ ОБРАЗЦЫ</p>
+                                        При себе он имеет все необходимые образы профилей раздвижной системы, а
+                                        также образцы и каталоги наполнения дверей-купе (образцы дсп, зеркал, стекол,
+                                        выбор рисунков пескоструйной обработки, рисунки для фотопечати и др.).
+                                    </li>
+                                    <li>
+                                        <p class="legend-header">ДЕЛАЕТ ТОЧНЫЙ ЗАМЕР</p>
+                                        Мастер производит обмер Вашего проема высокоточной профессиональной лазерной
+                                        рулеткой ТМ BOSH, проверяются все допуски и перепады по высоте и ширине
+                                        проема.
+                                    </li>
+                                    <li>
+                                        <p class="legend-header">ПОМОЩЬ СПЕЦИАЛИСТА</p>
+                                        Будьте уверены, Вы получите квалифицированную консультацию и помощь
+                                        специалиста с большим опытом.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <form id="staffForm" class="form-feedback staff-form">
+                            <input type="text" name="staff" hidden placeholder=""/>
+                            <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
+                            <input type="text" name="name" class="input-lg" required placeholder="Введите имя"/>
+                            <textarea rows="4" cols="50" placeholder="Введите сообщение..." class=""></textarea>
+                            <button type="submit" class="btn-lg color-black btn-primary">
+                                Вызвать мастера на замен
+                            </button>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
@@ -1566,6 +1632,13 @@
         $('.photo-block').css('backgroundImage', bg);
         $('.modal-text').html(currentText);
         $('.modal-heading').html(currentHeader);
+    });
+    $('.staff-btn').click(function () {
+        var currentStaff = $(this).parent('.staff-card').find('.staff-wrapper');
+        var modalStaff = currentStaff.html();
+        console.log(currentStaff);
+        console.log('modalStaff' + modalStaff);
+        $('.staff-modal-block').html(modalStaff);
     });
 </script>
 <script>

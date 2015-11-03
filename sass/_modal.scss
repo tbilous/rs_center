@@ -72,3 +72,81 @@
   }
 }
 
+.master-modal {
+  .modal-content {
+    padding: 2em 0 0;
+    background: url("../img/masters-modal-bg.jpg") no-repeat left center;
+    background-color: $master-modal-bg;
+    background-size: contain;
+  }
+  .modal-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+  .staff-modal-block {
+    color: white;
+  }
+  li {
+    color: $modal-light-grey;
+    position: relative;
+    margin-bottom: 5px;
+    &::before {
+      font-family: FontAwesome, serif;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      color: white;
+      top: 0;
+      left: -15px;
+    }
+    &:nth-child(1):before {
+      content: '\f017';
+    }
+    &:nth-child(2):before {
+      content: "\f02c";
+    }
+    &:nth-child(3):before {
+      content: "\f040";
+    }
+    &:nth-child(4):before {
+      content: "\f129";
+    }
+  }
+  .modal-close {
+    background: none;
+    border: none;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    z-index: 999;
+    right: .5em;
+    top: .5em;
+    font-size: 1.5em;
+    color: white;
+  }
+  .staff-modal-legend {
+    color: white;
+    margin-right: -30px;
+    @media all and (max-width: $screen-sm-min) {
+      font-size: 1em;
+      margin-right: 0;
+    }
+  }
+  .staff-legend {
+    margin: 0 -15px;
+    @media all and (max-width: $screen-sm-min) {
+      margin: 0 auto;
+    }
+  }
+  .staff-form {
+    margin: 2em auto 0;
+    @media all and (max-width: $screen-sm-min) {
+      margin: 0 auto;
+    }
+  }
+  .legend-header {
+    margin: 0;
+    color: white;
+  }
+}
