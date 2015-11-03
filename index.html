@@ -6,7 +6,7 @@
     <title>rs_center</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -255,6 +255,74 @@
         <h2 class="text-center bold color-cooper">Наша продукция</h2>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div id="featuresCarousel" class="carousel slide features-carousel carousel-fade" data-ride="carousel"
+                     data-interval="50000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featuresCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#featuresCarousel" data-slide-to="1"></li>
+                        <li data-target="#featuresCarousel" data-slide-to="2"></li>
+                        <li data-target="#featuresCarousel" data-slide-to="3"></li>
+                        <li data-target="#featuresCarousel" data-slide-to="4"></li>
+                        <li data-target="#featuresCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-content slave item1">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content slave item2">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content slave item3">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content slave item4">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content slave item5">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content slave item6">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#featuresCarousel" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#featuresCarousel" role="button" data-slide="next">
+                        <i class="fa fa-chevron-rignt"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <form id="productionForm" class="form-feedback production-form master">
+                    <h3 class="bold text-center header-form"><span
+                            class="color-cooper">Появились вопросы?</span><br/>
+                        Задайте их прямо сейчас!</h3>
+                    <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
+                    <input type="text" name="name" class="input-lg" required placeholder="Введите имя"/>
+                    <textarea rows="4" cols="50" placeholder="Введите сообщение..." class=""></textarea>
+                    <button type="submit" value="" class="btn-lg bold color-white btn-rounded btn-info">
+                        Задать
+                        вопрос
+                    </button>
+
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="container">
         <div class="item-row s-monitor" data-animated="fadeIn">
             <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -316,24 +384,10 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <form id="productionForm" class="form-feedback production-form">
-                        <h3 class="bold text-center header-form"><span
-                                class="color-cooper">Появились вопросы?</span><br/>
-                            Задайте их прямо сейчас!</h3>
-                        <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
-                        <input type="text" name="name" class="input-lg" required placeholder="Введите имя"/>
-                        <textarea rows="4" cols="50" placeholder="Введите сообщение..." class=""></textarea>
-                        <button type="submit" value="" class="btn-lg bold color-white btn-rounded btn-info">
-                            Задать
-                            вопрос
-                        </button>
-
-                        <div class="clearfix"></div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </section>
 <section class="section-warranty" id="warranty">
     <div class="section-header text-center">

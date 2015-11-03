@@ -11,10 +11,6 @@
 
   //features-1
   .features-1 {
-    /*    @media all and (max-width: $screen-sm-max) {
-          background: url("../img/features-block1-bg.jpg") no-repeat right;
-          background-size: 50%;
-        }*/
     @media all and (max-width: $screen-md-max) {
       font-size: 12px;
     }
@@ -44,8 +40,6 @@
         display: none;
       }
     }
-    //background: url("../img/features-block1-bg.jpg") no-repeat right -50%;
-
   }
   .features-list {
     list-style: none;
@@ -145,4 +139,5 @@
       margin-top: 9em;
     }
   }
+
 }

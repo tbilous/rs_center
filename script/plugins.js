@@ -163,6 +163,19 @@ $(document).ready(function () {
         }
     });
 
+    //SET MASTER HEIGHT FOR SLAVE
+    function master() {
+        var masterHeight = $('.master').outerHeight();
+        $(window).on('resize', function () {
+            var masterHeight = $('.master').height();
+            $('.slave').css('height', masterHeight + 'px');
+        });
+        $('.slave').css('height', masterHeight + 'px');
+    }
+
+    master();
+    window.onresize = master();
+
 
 
 });

@@ -6,7 +6,7 @@
   .section-header {
     margin-bottom: 2em;
   }
-  .item {
+  .item-row .item {
     background-color: rgba(255, 255, 255, .15);
     text-align: center;
     padding: .1px 0 1em;
@@ -62,7 +62,6 @@
     }
   }
   .production-form {
-    margin-left: 5em;
     input[type="text"], textarea {
       &:active,
       &:focus {
@@ -90,4 +89,21 @@
   .btn-rounded {
     margin-right: 1.5em;
   }
+  //carousel
+  .features-carousel {
+    .carousel-content {
+      //padding-top: 60%;
+      background: gray;
+    }
+  }
+
+  @media all and (min-width: $screen-sm-min) {
+    .production-form {
+      margin-left: -15px;
+    }
+    .features-carousel{
+      margin-right: -15px;
+    }
+  }
 }
+
