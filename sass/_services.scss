@@ -57,6 +57,12 @@
 
 .additional-services {
   margin-top: 1.5em;
+  .service-body {
+    padding-bottom: 0;
+  }
+  .service-photo {
+    padding-top: 155%;
+  }
 }
 
 .service-photo {
