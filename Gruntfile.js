@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
     grunt.loadNpmTasks('grunt-uncss');
-
+var dest = 'css/awesome';
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 src: ['index.html'],
-                dest: 'css/stylesheet.css',
+                dest: dest + '.css',
                 options: {
                     report: 'min', // optional: include to report savings
                     ignore:  [/\w\.in/,
@@ -51,20 +51,20 @@ module.exports = function (grunt) {
                 }
             },
             no_dest: {
-                src: 'css/stylesheet.css' // output file
+                src: dest + '.css' // output file
             }
 
         },
         cssmin: {
             options: {},
             minify: {
-                src: ['css/stylesheet.css'],
-                dest: absolutePath('css/stylesheet.min.css')
+                src: [dest+'.css'],
+                dest: absolutePath(dest + '.min.css')
             }
         },
         watch: {
             css: {
-                files: ['css/styles.css'],
+                files: [dest + '.css'],
                 tasks: ['default']
             }
         }
