@@ -144,7 +144,7 @@ $(document).ready(function () {
     });
 
     //MAIL FORM
-    $("form").submit(function () {
+/*    $("form").submit(function () {
         var formID = $(this).attr("id");
         $.ajax({
             type: "POST",
@@ -161,10 +161,33 @@ $(document).ready(function () {
         } else {
             return false;
         }
+    });*/
+    //MAIL FORM
+    $("form").submit(function () {
+        var formID = $(this).attr("id");
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            //alert('отработала' + ' - ' + formID);
+            $('#' + formID).trigger("reset");
+        });
+        //console.log($(this));
+        var parent = $(this).parents('.modal');
+        var modalID = parent.attr("id");
+
+        if ($('#' + modalID).hasClass('in')) {
+            $('#' + modalID).modal('hide');
+            return false;
+        } else {
+            return false;
+        }
     });
 
     //SET MASTER HEIGHT FOR SLAVE
-    function master() {
+/*    function master() {
         var masterHeight = $('.master').outerHeight();
         $(window).on('resize', function () {
             var masterHeight = $('.master').outerHeight();
@@ -174,7 +197,7 @@ $(document).ready(function () {
     }
 
     master();
-    window.onresize = master();
+    window.onresize = master();*/
 
 
 

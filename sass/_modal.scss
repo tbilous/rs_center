@@ -64,6 +64,14 @@
 }
 
 .products-modal {
+  .modal-body{
+    padding: 0;
+  }
+  .modal-dialog{
+    @media (min-width: $screen-sm-min){
+      width: 90%;
+    }
+  }
   .spacer {
     padding-top: 65%;
   }
@@ -148,5 +156,12 @@
   .legend-header {
     margin: 0;
     color: white;
+  }
+}
+.service-banner{
+  background: url("../img/add-services-modal.jpg") no-repeat;
+  background-size: cover;
+  .spacer{
+    padding-top: 60%;
   }
 }

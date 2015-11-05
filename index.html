@@ -6,9 +6,12 @@
     <title>rs_center</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <!--<link rel="stylesheet" href="css/styles.css">-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--<link rel="stylesheet" href="css/font-awesome.css">-->
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+    <link rel="stylesheet" href="css/flip.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -250,9 +253,6 @@
 
     </div>
 </section>
-
-
-
 <section class="section-production" id="production">
     <div class="section-header">
         <h2 class="text-center bold color-cooper">Наша продукция</h2>
@@ -266,7 +266,9 @@
                             зеркальные</h4>
 
                         <div class="item-photo dveri-zerkalnie"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(0);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -275,7 +277,9 @@
                             глухие</h4>
 
                         <div class="item-photo dveri-gluhie-dsp"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(1);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -284,7 +288,9 @@
                             пескоструй</h4>
 
                         <div class="item-photo dveri-peskostruy"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(2);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -293,7 +299,9 @@
                             фотопечать</h4>
 
                         <div class="item-photo dveri-fotopechat"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(3);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
             </div>
@@ -306,7 +314,9 @@
                             Лакобель</h4>
 
                         <div class="item-photo dveri-lakobel-oracal"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(4);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -315,7 +325,9 @@
                             комбинированные</h4>
 
                         <div class="item-photo dveri-kombinirovannie"></div>
-                        <a class="btn btn-lg item-button" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+                        <button class="btn btn-lg item-button" data-toggle="modal" data-target="#prModal"
+                                onclick="$('#featuresCarousel').carousel(5);">ПОДРОБНЕЕ
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
@@ -337,179 +349,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <div id="featuresCarousel" class="carousel slide features-carousel carousel-fade" data-ride="carousel"
-                     data-interval="50000">
-                    <ol class="carousel-indicators">
-                        <li data-target="#featuresCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#featuresCarousel" data-slide-to="1"></li>
-                        <li data-target="#featuresCarousel" data-slide-to="2"></li>
-                        <li data-target="#featuresCarousel" data-slide-to="3"></li>
-                        <li data-target="#featuresCarousel" data-slide-to="4"></li>
-                        <li data-target="#featuresCarousel" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="carousel-content slave item1">
-                                <h3 class="item-header">Двери зеркальные</h3>
 
-                                <div class="hidden item-text">
-                                    <p>
-                                        Зеркальные двери-купе это отличный способ визуально увеличить объем помещения.
-                                        Для изготовления зеркальных дверей-купе, мы используем только экологически чистое, не содержащее медь и свинец, зеркало толщиной 4мм,
-                                        Бельгийского производства.
-                                        Усовершенствованная стойкость к сильным чистящим средствам: в 7 раз более стойкое, чем у обычных зеркал.  Отсутствует появление пятен или эффекта "цветения".
-                                        Эти зеркала служат в 3 раза дольше. Так же,
-                                        все зеркала, используемые в производстве наших дверей-купе, армированы защитной броне-пленкой.  Благодаря которой, при разбитие,  зеркало не осыпается на острые
-                                        опасные осколки, а остается на пленке, что убережет Вас и Вашу семью от порезов.
-                                        И последний несомненный плюс, это цветовая гамма зеркал; обычное зеркало
-                                        серебро, тонированное зеркало бронза и графит.
-                                    </p>
-                                </div>
-                                <button class="btn item-button-cr btn-md start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="carousel-content slave item2">
-                                <h3 class="item-header">Двери глухие</h3>
-
-                                <div class="hidden item-text">
-                                    <p>
-                                        Для изготовления глухих панельных дверей-купе, мы используем
-                                        ламинированное ДСП таких компаний как Egger, Kronospan. Благодаря  широкой
-                                        цветовой гамме более 250 цветов, Вы легко выберите нужный цвет, что бы
-                                        подчеркнуть индивидуальность и создать комфортную атмосферу в любом помещении.
-                                    </p>
-                                </div>
-                                <button class="item-button-cr btn btn-md  item-btn item-button start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="carousel-content slave item3">
-                                <h3 class="item-header">Двери пескоструй</h3>
-
-                                <div class="hidden item-text">
-                                    <p>
-                                        С помощью этого  метода обработки, можно создать уникальный дизайн любого
-                                        помещения,
-                                        так как интерьерная фотопечать имеет огромную область применения. В последнее
-                                        время
-                                        пользуются повышенным спросом  шкафы купе и раздвижные межкомнатные двери купе с
-                                        фотопечатью. Рисунок может быть как цветным, так и черно-белым. Большой плюс
-                                        данной
-                                        технологии в том, что можно изготовить практически любой рисунок. Вы можете
-                                        выбрать
-                                        не только рисунок из нашего каталога, но и любой понравившийся рисунок,
-                                        найденный
-                                        Вами в интернете, или любое свое личное фото. Если Вы подобрали рисунок с
-                                        хорошим
-                                        качеством и с хорошим разрешением,  мы перенесем его на Ваши двери купе.
-                                    </p>
-                                </div>
-                                <button class=" item-button-cr btn btn-md item-btn item-button start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="carousel-content slave item4">
-                                <h3 class="item-header">Двери фотопечать</h3>
-
-                                <div class="hidden item-text">
-                                    <p>
-                                        С помощью этого  метода обработки, можно создать уникальный дизайн любого
-                                        помещения, так как интерьерная фотопечать имеет огромную область применения. В
-                                        последнее время пользуются повышенным спросом  шкафы купе и раздвижные
-                                        межкомнатные двери купе с фотопечатью. Рисунок может быть как цветным, так и
-                                        черно-белым. Большой плюс данной технологии в том, что можно изготовить
-                                        практически любой рисунок. Вы можете выбрать не только рисунок из нашего
-                                        каталога, но и любой понравившийся рисунок, найденный Вами в интернете, или
-                                        любое свое личное фото. Если Вы подобрали рисунок с хорошим качеством и с
-                                        хорошим разрешением,  мы перенесем его на Ваши двери купе.
-                                    </p>
-                                </div>
-                                <button class="btn btn-md item-button-cr item-btn item-button start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="carousel-content slave item5">
-                                <h3 class="item-header">Двери лакобель</h3>
-
-                                <div class="hidden item-text">
-                                    <p>
-                                        У нас можно изготовить двери-купе со стеклом любого оттенка. Стекло для
-                                        шкафов-купе тонируется немецкой самоклеящейся пленкой ORACAL (ОРАКAЛ), которая
-                                        не только придает стеклу выбранный тон с глянцевым или матовым эффектом, но и
-                                        обладает защитными свойствами. Так же с помощью этой пленки могут быть
-                                        изготовлены цветные раздвижные межкомнатные двери-купе.
-                                    </p>
-                                </div>
-                                <button class="btn btn-md item-button-cr item-btn item-button start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="carousel-content slave item6">
-                                <h3 class="item-header">Двери комбинированные</h3>
-
-                                <div class="hidden item-text">
-                                    <p>
-                                        Двери-купе с комбинированным наполнением. 
-                                        Отличительным качеством таких дверей, является возможность подбора практически
-                                        любого наполнения. Здесь могут использоваться практически все варианты
-                                        наполнения, поэтому такие двери очень легко вписать в интерьер.
-                                    </p>
-                                </div>
-                                <button class="btn btn-md btn-rounded item-btn item-button start-modal get-bg"
-                                        data-toggle="modal"
-                                        data-target="#prModal">ПОДРОБНЕЕ
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#featuresCarousel" role="button" data-slide="prev">
-                        <i class="fa fa-2x fa-angle-left"></i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#featuresCarousel" role="button" data-slide="next">
-                        <i class="fa fa-2x fa-angle-right"></i>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-5">
-                <form id="productionFormModal" class="form-feedback production-form master">
-                    <h3 class="bold text-center header-form"><span
-                            class="color-cooper">Появились вопросы?</span><br/>
-                        Задайте их прямо сейчас!</h3>
-                    <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
-                    <input type="text" name="name" class="input-lg" required placeholder="Введите имя"/>
-                    <textarea rows="4" cols="50" placeholder="Введите сообщение..." class=""></textarea>
-                    <button type="submit" value="" class="btn-lg bold color-white btn-rounded btn-info">
-                        Задать
-                        вопрос
-                    </button>
-
-                    <div class="clearfix"></div>
-                </form>
-            </div>
-        </div>
-    </div>
 </section>
 <section class="section-warranty" id="warranty">
     <div class="section-header text-center">
@@ -1278,8 +1118,10 @@
                                     <li>Предоставление заказчику образцов профилей и вариантов наполнения.</li>
                                 </ul>
                             </div>
-                            <a href="img/add-services-modal.jpg" data-lightbox="services"
-                               class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
+                            <button class="service-button btn btn-lg btn-primary color-black btn-rounded"
+                                    data-toggle="modal" data-target="#serviceModal">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1299,8 +1141,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="img/add-services-modal.jpg" data-lightbox="services1"
-                               class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
+                            <button class="service-button btn btn-lg btn-primary color-black btn-rounded"
+                                    data-toggle="modal" data-target="#serviceModal">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1318,8 +1162,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="img/add-services-modal.jpg" data-lightbox="services2"
-                               class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
+                            <button class="service-button btn btn-lg btn-primary color-black btn-rounded"
+                                    data-toggle="modal" data-target="#serviceModal">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1342,8 +1188,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="img/add-services-modal.jpg" data-lightbox="services3"
-                               class="sevice-button btn btn-lg btn-primary color-black btn-rounded">ПОДРОБНЕЕ</a>
+                            <button class="service-button btn btn-lg btn-primary color-black btn-rounded"
+                                    data-toggle="modal" data-target="#serviceModal">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1615,21 +1463,169 @@
 </div>
 <!--products modal-->
 <div class="modal fade products-modal" id="prModal" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-md">
+    <div class="modal-dialog">
         <div class="modal-content">
-            <div class="photo-block">
-                <div class="spacer"></div>
-            </div>
             <div class="modal-body">
-                <h3 class="modal-heading"></h3>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="featuresCarousel" class="carousel slide features-carousel carousel-fade"
+                             data-ride="carousel"
+                             data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="carousel-content item1">
+                                        <h3 class="item-header">Двери зеркальные</h3>
 
-                <div class="modal-text"></div>
-                <div class="btn-wrapper text-center">
-                    <a data-dismiss="modal" data-toggle="modal" data-target="#orderModal"
-                       class="btn btn-lg color-white btn-rounded btn-info start-modal">
-                        Задать
-                        вопрос
-                    </a>
+                                        <div class="item-text">
+                                            <p>
+                                                Зеркальные двери-купе это отличный способ визуально увеличить объем
+                                                помещения.
+                                                Для изготовления зеркальных дверей-купе, мы используем только экологически чистое, не содержащее медь и свинец, зеркало толщиной 4мм,
+                                                Бельгийского производства.
+                                                Усовершенствованная стойкость к сильным чистящим средствам: в 7 раз более стойкое, чем у обычных зеркал.  Отсутствует появление пятен или эффекта "цветения".
+                                                Эти зеркала служат в 3 раза дольше. Так же,
+                                                все зеркала, используемые в производстве наших дверей-купе, армированы защитной броне-пленкой.  Благодаря которой, при разбитие,  зеркало не осыпается на острые
+                                                опасные осколки, а остается на пленке, что убережет Вас
+                                                и Вашу семью от порезов.
+                                                И последний несомненный плюс, это цветовая гамма зеркал; обычное зеркало
+                                                серебро, тонированное зеркало бронза и графит.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-content  item2">
+                                        <h3 class="item-header">Двери глухие</h3>
+
+                                        <div class="item-text">
+                                            <p>
+                                                Для изготовления глухих панельных дверей-купе, мы используем
+                                                ламинированное ДСП таких компаний как Egger, Kronospan.
+                                                Благодаря  широкой
+                                                цветовой гамме более 250 цветов, Вы легко выберите нужный цвет, что бы
+                                                подчеркнуть индивидуальность и создать комфортную атмосферу в любом
+                                                помещении.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-content  item3">
+                                        <h3 class="item-header">Двери пескоструй</h3>
+
+                                        <div class=" item-text">
+                                            <p>
+                                                С помощью этого  метода обработки, можно создать уникальный дизайн
+                                                любого
+                                                помещения,
+                                                так как интерьерная фотопечать имеет огромную область применения. В
+                                                последнее
+                                                время
+                                                пользуются повышенным спросом  шкафы купе и раздвижные межкомнатные
+                                                двери купе с
+                                                фотопечатью. Рисунок может быть как цветным, так и черно-белым. Большой
+                                                плюс
+                                                данной
+                                                технологии в том, что можно изготовить практически любой рисунок. Вы
+                                                можете
+                                                выбрать
+                                                не только рисунок из нашего каталога, но и любой понравившийся рисунок,
+                                                найденный
+                                                Вами в интернете, или любое свое личное фото. Если Вы подобрали рисунок
+                                                с
+                                                хорошим
+                                                качеством и с хорошим разрешением,  мы перенесем его на Ваши двери купе.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-content  item4">
+                                        <h3 class="item-header">Двери фотопечать</h3>
+
+                                        <div class="item-text">
+                                            <p>
+                                                С помощью этого  метода обработки, можно создать уникальный дизайн
+                                                любого
+                                                помещения, так как интерьерная фотопечать имеет огромную область
+                                                применения. В
+                                                последнее время пользуются повышенным спросом  шкафы купе и раздвижные
+                                                межкомнатные двери купе с фотопечатью. Рисунок может быть как цветным,
+                                                так и
+                                                черно-белым. Большой плюс данной технологии в том, что можно изготовить
+                                                практически любой рисунок. Вы можете выбрать не только рисунок из нашего
+                                                каталога, но и любой понравившийся рисунок, найденный Вами в интернете,
+                                                или
+                                                любое свое личное фото. Если Вы подобрали рисунок с хорошим качеством и
+                                                с
+                                                хорошим разрешением,  мы перенесем его на Ваши двери купе.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-content  item5">
+                                        <h3 class="item-header">Двери лакобель</h3>
+
+                                        <div class=" item-text">
+                                            <p>
+                                                У нас можно изготовить двери-купе со стеклом любого оттенка. Стекло для
+                                                шкафов-купе тонируется немецкой самоклеящейся пленкой ORACAL (ОРАКAЛ),
+                                                которая
+                                                не только придает стеклу выбранный тон с глянцевым или матовым эффектом,
+                                                но и
+                                                обладает защитными свойствами. Так же с помощью этой пленки могут быть
+                                                изготовлены цветные раздвижные межкомнатные двери-купе.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-content item6">
+                                        <h3 class="item-header">Двери комбинированные</h3>
+
+                                        <div class=" item-text">
+                                            <p>
+                                                Двери-купе с комбинированным наполнением. 
+                                                Отличительным качеством таких дверей, является возможность подбора
+                                                практически
+                                                любого наполнения. Здесь могут использоваться практически все варианты
+                                                наполнения, поэтому такие двери очень легко вписать в интерьер.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#featuresCarousel" role="button" data-slide="prev">
+                                <i class="fa fa-2x fa-angle-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#featuresCarousel" role="button" data-slide="next">
+                                <i class="fa fa-2x fa-angle-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form id="productionFormModal" class="form-feedback production-form production-modal-form">
+                            <div class="heading">Позвоните нам:</div>
+                            <div class="phone-heading text-nowrap"><i class="fa fa-phone"></i>044 222 74 60</div>
+                            <div class="phone-heading text-nowrap"><i class="fa fa-phone"></i>050 736 50 80</div>
+                            <div class="heading">или закажите консультацию</div>
+                            <div class="heading2">Вы получите:</div>
+                            <ul class="list-unstyled">
+                                <li class="check-list">Четкие ответы на свои вопросы</li>
+                                <li class="check-list">Быстрый расчет конструкции</li>
+                                <li class="check-list">Честную цену и быстрое исполнение проекта</li>
+                            </ul>
+
+                            <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
+                            <button type="submit" value="" class="btn-lg bold color-white btn-info">
+                                Жду звонка
+                            </button>
+                            <div class="bold text-center">Мы перезвоним в течении 10 минут</div>
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -1684,7 +1680,7 @@
                             <input type="text" name="name" class="input-lg" required placeholder="Введите имя"/>
                             <textarea rows="4" cols="50" placeholder="Введите сообщение..." class=""></textarea>
                             <button type="submit" class="btn-lg color-black btn-primary">
-                                Вызвать мастера на замен
+                                Вызвать мастера на замер
                             </button>
 
                             <div class="clearfix"></div>
@@ -1693,6 +1689,43 @@
                 </div>
 
             </div>
+        </div>
+    </div>
+</div>
+<!--service modal-->
+<div class="modal fade products-modal" id="serviceModal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="service-banner">
+                            <div class="spacer"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form id="serviceFormModal" class="form-feedback production-form production-modal-form">
+                            <div class="heading">Позвоните нам:</div>
+                            <div class="phone-heading text-nowrap"><i class="fa fa-phone"></i>044 222 74 60</div>
+                            <div class="phone-heading text-nowrap"><i class="fa fa-phone"></i>050 736 50 80</div>
+                            <div class="heading">или закажите консультацию</div>
+                            <div class="heading2">Вы получите:</div>
+                            <ul class="list-unstyled">
+                                <li class="check-list">Четкие ответы на свои вопросы</li>
+                                <li class="check-list">Быстрый расчет конструкции</li>
+                                <li class="check-list">Честную цену и быстрое исполнение проекта</li>
+                            </ul>
+
+                            <input type="text" name="phone" class="input-lg" required placeholder="Введите телефон"/>
+                            <button type="submit" value="" class="btn-lg bold color-white btn-info">
+                                Жду звонка
+                            </button>
+                            <div class="bold text-center">Мы перезвоним в течении 10 минут</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

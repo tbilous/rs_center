@@ -95,6 +95,7 @@ body {
 .relative {
   position: relative;
 }
+
 .bold {
   font-family: 'LatoWebBold', sans-serif;
 }
@@ -126,6 +127,7 @@ i {
 .color-modal-gray {
   color: $modal-light-grey;
 }
+
 .sub-header-color {
   color: $font-color1;
 }
@@ -133,9 +135,11 @@ i {
 .color-link {
   color: $link-color;
 }
+
 .dark-section-color {
   color: $font-color4;
 }
+
 .color-features-list {
   color: $font-color3;
 }
@@ -143,6 +147,7 @@ i {
 .btn-lg {
   font-size: 1.3em;
 }
+
 .btn-rounded {
   border-radius: 2em;
 }
@@ -298,7 +303,6 @@ a, button, input, textarea {
   padding: 0;
 }
 
-
 .spacer {
   font-size: 1px;
   &.quad {
@@ -309,6 +313,11 @@ a, button, input, textarea {
 .form-feedback {
   background-color: white;
   padding: 2em 2em .5em;
+  &.production-modal-form {
+    @media (min-width: $screen-lg-min) {
+      padding-left: 0;
+    }
+  }
   &.staff-form {
     background-color: transparent;
     padding: 0;
@@ -341,6 +350,48 @@ a, button, input, textarea {
   }
   .header-form {
     margin: 0 0 1em;
+  }
+}
+
+.production-modal-form {
+  .heading {
+
+  }
+  .heading2, .heading, .phone-heading{
+    text-align: center;
+  }
+  .heading2{
+    font-size: 1.4em;
+    margin-bottom: .8em;
+  }
+  .heading, .phone-heading, .heading2 {
+    font-weight: bold;
+  }
+  .phone-heading, .heading2 {
+    font-size: 2em;
+    line-height: 1;
+  }
+  .heading, .check-list {
+    font-size: 1.2em;
+  }
+  .fa-phone{
+    margin-right: 10px;
+  }
+  .check-list{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content:"\f00c";
+      font-family: 'FontAwesome', serif;
+      position: absolute;
+      left: 0;
+      color: $copper-color;
+    }
+  }
+
+  button[type="submit"] {
+    float: none;
+    width: 100%;
   }
 }
 
