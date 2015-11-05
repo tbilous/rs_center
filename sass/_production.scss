@@ -6,7 +6,7 @@
   .section-header {
     margin-bottom: 2em;
   }
-  .item-row .item {
+  .item-pr {
     background-color: rgba(255, 255, 255, .15);
     text-align: center;
     padding: .1px 0 1em;
@@ -17,11 +17,10 @@
     }
   }
   .item-header {
+    color: white;
     font-family: 'LatoWebBold', sans-serif;
     text-transform: uppercase;
     white-space: pre-line;
-    margin: 0;
-    color: white;
   }
   .item-photo {
     margin: 0 auto;
@@ -52,14 +51,18 @@
     }
   }
   .item-button {
-    background: white;
-    width: 10em;
-    position: absolute;
-    left: 50%;
-    margin-left: -5em;
-    bottom: 7%;
+    background: url("../img/item-button-bg.png") center -50px no-repeat;
+    width: 100%;
+    color: white;
+    margin-top: 1em;
+    cursor: url("../img/pointer.png"), pointer;
+    &:hover {
+      background-position: center 0;
+      color: white;
+    }
   }
   .production-form {
+    margin-left: 5em;
     input[type="text"], textarea {
       &:active,
       &:focus {
@@ -168,13 +171,64 @@
     }
   }
 
-  @media all and (min-width: $screen-sm-min) {
+/*  @media all and (min-width: $screen-sm-min) {
     .production-form {
       margin-left: -15px;
     }
     .features-carousel {
       margin-right: -15px;
     }
-  }
+  }*/
 }
 
+//NEW PR CAROUSEL
+.carousel{
+  .item-header{
+    color: white;
+    font-family: 'LatoWebBold', sans-serif;
+    text-transform: uppercase;
+    white-space: pre-line;
+    margin: 0;
+  }
+  .item-button-cr {
+    height: 2.8em;
+    border-radius: 1.4em;
+    width: 10em;
+    color: white;
+    margin-top: 1em;
+    cursor: url("../img/pointer.png"), pointer;
+    background-color: rgba(255,255,255,.3);
+    &:hover {
+      background-color: rgba(255,255,255,.8);
+      color: white;
+    }
+  }
+  .item-photo {
+    margin: 0 auto;
+    padding-top: 112%;
+    &.dveri-zerkalnie {
+      background: transparent url("../img/goods/dveri-zerkalnie.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-gluhie-dsp {
+      background: transparent url("../img/goods/dveri-gluhie-dsp.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-peskostruy {
+      background: transparent url("../img/goods/dveri-peskostruy.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-fotopechat {
+      background: transparent url("../img/goods/dveri-fotopechat.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-lakobel-oracal {
+      background: transparent url("../img/goods/dveri-lakobel-oracal.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.dveri-kombinirovannie {
+      background: transparent url("../img/goods/dveri-kombinirovannie.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
