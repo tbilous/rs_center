@@ -7,5 +7,4 @@ addons
 bower_components
 node_modules
 .sass-cache
-css/styles.css.map
-js/plugins.min.js
+

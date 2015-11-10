@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
     grunt.loadNpmTasks('grunt-uncss');
-var dest = 'css/awesome';
+var dest = 'css/animation';
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
@@ -18,8 +18,7 @@ var dest = 'css/awesome';
                 src: ['index.html'],
                 dest: dest + '.css',
                 options: {
-                    report: 'min', // optional: include to report savings
-                    ignore:  [/\w\.in/,
+                    ignore:  [/*/\w\.in/,
                         ".fade",
                         ".collapse",
                         ".collapsing",
@@ -37,7 +36,16 @@ var dest = 'css/awesome';
                         ".modal.in.modal-dialog",
                         ".modal-open",
                         ".in",
-                        ".modal-backdrop"]
+                        ".modal-backdrop",*/
+                        "fadeInLeftBig",
+                        "fadeInDownBig",
+                        "fadeInRightBig",
+                        "fadeIn",
+                        "flash",
+                        "rubberBand",
+                        "shake",
+                        "pulse",
+                        "bounceIn"]
                 }
             }
         },

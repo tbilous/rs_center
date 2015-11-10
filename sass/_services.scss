@@ -62,6 +62,13 @@
   }
   .service-photo {
     padding-top: 155%;
+    position: relative;
+  }
+  .button-wrapper{
+    position: absolute;
+    height: 4em;
+    width: 100%;
+    bottom: 1em;
   }
 }
 
