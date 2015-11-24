@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "tbilous@gmail.com";
+$recepient = "info@rs-center.com.ua";
 $sitename = "SKMEI Clock";
 
 
