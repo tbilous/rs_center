@@ -180,8 +180,10 @@ $(document).ready(function () {
 
         if ($('#' + modalID).hasClass('in')) {
             $('#' + modalID).modal('hide');
+            $('#callbackModal').modal('show');
             return false;
         } else {
+            $('#callbackModal').modal('show');
             return false;
         }
     });

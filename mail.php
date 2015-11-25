@@ -1,7 +1,7 @@
 <?php
 
-$recepient = "tbilous@gmail.com";
-$sitename = "SKMEI Clock";
+$recepient = "info@rs-center.com.ua";
+$sitename = "RS Center";
 
 
 $comment = trim($_POST["comment"]);
